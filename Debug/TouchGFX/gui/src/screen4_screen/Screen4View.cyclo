@@ -1,0 +1,20 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:515:10:void touchgfx::Drawable::setVisible(bool)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+../TouchGFX/gui/include/gui/screen4_screen/Screen4View.hpp:11:13:Screen4View::~Screen4View()	1
+../TouchGFX/gui/include/gui/screen4_screen/Screen4View.hpp:11:13:virtual Screen4View::~Screen4View()	1
+../TouchGFX/gui/src/screen4_screen/Screen4View.cpp:3:1:Screen4View::Screen4View()	1
+../TouchGFX/gui/src/screen4_screen/Screen4View.cpp:8:6:virtual void Screen4View::setupScreen()	1
+../TouchGFX/gui/src/screen4_screen/Screen4View.cpp:16:6:virtual void Screen4View::tearDownScreen()	1
+../TouchGFX/gui/src/screen4_screen/Screen4View.cpp:20:6:void Screen4View::updateVal(unsigned int)	1
+../TouchGFX/gui/src/screen4_screen/Screen4View.cpp:24:6:void Screen4View::updateStatePantalla(unsigned int)	3
+../TouchGFX/gui/src/screen4_screen/Screen4View.cpp:36:6:void Screen4View::updateStateUp(unsigned int)	8
+../TouchGFX/gui/src/screen4_screen/Screen4View.cpp:64:6:void Screen4View::updateStateDown(unsigned int)	8
+../TouchGFX/gui/src/screen4_screen/Screen4View.cpp:94:6:void Screen4View::updateStateSelect(unsigned int)	3
+../TouchGFX/gui/src/screen4_screen/Screen4View.cpp:105:6:void Screen4View::updatePantalla(unsigned int)	15
+../TouchGFX/gui/src/screen4_screen/Screen4View.cpp:200:6:void Screen4View::startBlinking(uint16_t)	1
+../TouchGFX/gui/src/screen4_screen/Screen4View.cpp:206:6:void Screen4View::stopBlinking()	4
+../TouchGFX/gui/src/screen4_screen/Screen4View.cpp:220:6:virtual void Screen4View::handleTickEvent()	6
+../TouchGFX/gui/src/screen4_screen/Screen4View.cpp:243:6:void Screen4View::updateData(int*)	3
+../TouchGFX/gui/src/screen4_screen/Screen4View.cpp:267:6:void Screen4View::ReUpdateData()	1

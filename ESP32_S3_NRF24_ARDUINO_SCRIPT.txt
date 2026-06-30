@@ -1,0 +1,364 @@
+/*
+  ESP32-S3-WROOM-1 + nRF24L01 Arduino single-file script
+  -------------------------------------------------------
+  Compatible with the STM32 firmware radio protocol currently implemented.
+
+  Assumptions:
+  - RF channel: 0x2A
+  - RF address: "DSP01"
+  - Fixed payload size: 32 bytes
+  - Auto-ack disabled
+  - The STM32 sends telemetry packets with type 0xA1
+  - The STM32 accepts config packets with type 0xC1
+  - The STM32 replies with config ACK packets with type 0xC2
+
+  Arduino library required:
+  - RF24 by TMRh20
+
+  Serial commands:
+  - radio 1
+  - radio 0
+  - sd 1
+  - sd 0
+  - help
+
+  Adjust the pin mapping below to your ESP32-S3 board wiring.
+*/
+
+#include <SPI.h>
+#include <RF24.h>
+
+// ---------------------------------------------------------------------------
+// Pin mapping
+// ---------------------------------------------------------------------------
+static constexpr uint8_t PIN_NRF_CE   = 9;
+static constexpr uint8_t PIN_NRF_CSN  = 10;
+static constexpr uint8_t PIN_NRF_SCK  = 12;
+static constexpr uint8_t PIN_NRF_MISO = 13;
+static constexpr uint8_t PIN_NRF_MOSI = 11;
+static constexpr uint8_t PIN_NRF_IRQ  = 14;
+
+// ---------------------------------------------------------------------------
+// STM32 radio protocol constants
+// ---------------------------------------------------------------------------
+static constexpr uint8_t RADIO_AIR_PACKET_TYPE_TELEMETRY  = 0xA1;
+static constexpr uint8_t RADIO_AIR_PACKET_TYPE_CONFIG_SET = 0xC1;
+static constexpr uint8_t RADIO_AIR_PACKET_TYPE_CONFIG_ACK = 0xC2;
+
+static constexpr uint8_t CONFIG_KEY_RADIO_TELEMETRY_ENABLE = 1;
+static constexpr uint8_t CONFIG_KEY_SD_LOG_ENABLE          = 2;
+
+static constexpr uint8_t NRF_CHANNEL = 0x2A;
+static constexpr uint8_t NRF_PAYLOAD_SIZE = 32;
+static constexpr char NRF_ADDRESS[6] = "DSP01";
+
+// ---------------------------------------------------------------------------
+// Telemetry payload layout from STM32
+// 32-byte packet:
+//   [0]   type = 0xA1
+//   [1]   payload length = 26
+//   [2:3] sequence low 16 bits
+//   [4:5] source CAN id low 16 bits
+//   [6:31] DisplayTelemetry (13 x uint16_t LE)
+// ---------------------------------------------------------------------------
+struct DisplayTelemetry
+{
+  uint16_t accel;
+  uint16_t brake;
+  uint16_t soc;
+  uint16_t dcBus;
+  uint16_t vMin;
+  uint16_t invState;
+  uint16_t tempBrakeFl;
+  uint16_t tempBrakeFr;
+  uint16_t tempBrakeRl;
+  uint16_t tempBrakeRr;
+  uint16_t tempInv;
+  uint16_t tempAccu;
+  uint16_t tempMotor;
+};
+
+static_assert(sizeof(DisplayTelemetry) == 26, "DisplayTelemetry size must be 26 bytes");
+
+RF24 radio(PIN_NRF_CE, PIN_NRF_CSN);
+
+String serialLine;
+volatile bool g_nrfIrqPending = false;
+uint32_t lastPacketMs = 0;
+uint32_t rxPacketCount = 0;
+uint32_t rxTelemetryCount = 0;
+uint32_t rxAckCount = 0;
+uint32_t rxUnknownCount = 0;
+uint32_t statsWindowStartMs = 0;
+uint32_t statsWindowPackets = 0;
+uint32_t lastPrintedSeq = 0;
+uint32_t lastTelemetryPrintMs = 0;
+
+static constexpr uint32_t SERIAL_BAUDRATE = 115200;
+static constexpr uint32_t STATS_PRINT_PERIOD_MS = 5000;
+
+static void IRAM_ATTR onNrfIrq()
+{
+  g_nrfIrqPending = true;
+}
+
+static uint16_t readU16Le(const uint8_t* data)
+{
+  return (uint16_t)data[0] | ((uint16_t)data[1] << 8);
+}
+
+static void printTelemetry(const uint8_t* packet)
+{
+  DisplayTelemetry t {};
+  const uint16_t seq = readU16Le(&packet[2]);
+  const uint16_t canId = readU16Le(&packet[4]);
+  const uint32_t now = millis();
+  const uint32_t deltaMs = (lastTelemetryPrintMs == 0U) ? 0U : (now - lastTelemetryPrintMs);
+
+  memcpy(&t, &packet[6], sizeof(t));
+  lastTelemetryPrintMs = now;
+
+  Serial.printf("TLM seq=%u dt=%lums can=0x%03X acc=%u brk=%u soc=%u inv=%u dc=%u vm=%u tinv=%u tacc=%u tmot=%u\n",
+                seq,
+                (unsigned long)deltaMs,
+                canId,
+                t.accel,
+                t.brake,
+                t.soc,
+                t.invState,
+                t.dcBus,
+                t.vMin,
+                t.tempInv,
+                t.tempAccu,
+                t.tempMotor);
+}
+
+static void printConfigAck(const uint8_t* packet)
+{
+  const uint8_t len = packet[1];
+  if (len < 3)
+  {
+    Serial.println(F("ACK packet too short"));
+    return;
+  }
+
+  const uint8_t key = packet[6];
+  const uint8_t value = packet[7];
+  const uint8_t applied = packet[8];
+
+  Serial.printf("ACK key=%u value=%u applied=%u\n", key, value, applied);
+}
+
+static void handleRadioPacket(const uint8_t* packet)
+{
+  if (packet[0] == RADIO_AIR_PACKET_TYPE_TELEMETRY)
+  {
+    rxTelemetryCount++;
+    printTelemetry(packet);
+    return;
+  }
+
+  if (packet[0] == RADIO_AIR_PACKET_TYPE_CONFIG_ACK)
+  {
+    rxAckCount++;
+    printConfigAck(packet);
+    return;
+  }
+
+  rxUnknownCount++;
+  Serial.printf("Unknown packet type 0x%02X\n", packet[0]);
+}
+
+static void printRxStats()
+{
+  const uint32_t now = millis();
+  const uint32_t elapsed = now - statsWindowStartMs;
+  if (elapsed < STATS_PRINT_PERIOD_MS)
+  {
+    return;
+  }
+
+  const float pps = (elapsed > 0U) ? (1000.0f * (float)statsWindowPackets / (float)elapsed) : 0.0f;
+  Serial.printf("[RADIO] stats pps=%.1f total=%lu tlm=%lu ack=%lu unk=%lu lastSeq=%lu\n",
+                pps,
+                (unsigned long)rxPacketCount,
+                (unsigned long)rxTelemetryCount,
+                (unsigned long)rxAckCount,
+                (unsigned long)rxUnknownCount,
+                (unsigned long)lastPrintedSeq);
+
+  statsWindowStartMs = now;
+  statsWindowPackets = 0U;
+}
+
+static bool sendConfigPacket(uint8_t key, uint16_t value)
+{
+  uint8_t packet[NRF_PAYLOAD_SIZE] = {0};
+
+  packet[0] = RADIO_AIR_PACKET_TYPE_CONFIG_SET;
+  packet[1] = 3; // key + value(2)
+  packet[6] = key;
+  packet[7] = (uint8_t)(value & 0xFF);
+  packet[8] = (uint8_t)((value >> 8) & 0xFF);
+
+  radio.stopListening();
+  delayMicroseconds(200);
+
+  const bool ok = radio.write(packet, sizeof(packet));
+
+  radio.startListening();
+
+  Serial.printf("TX config key=%u value=%u result=%s\n", key, value, ok ? "OK" : "FAIL");
+  return ok;
+}
+
+static void printHelp()
+{
+  Serial.println(F("Commands:"));
+  Serial.println(F("  radio 1"));
+  Serial.println(F("  radio 0"));
+  Serial.println(F("  sd 1"));
+  Serial.println(F("  sd 0"));
+  Serial.println(F("  help"));
+}
+
+static void handleCommand(const String& line)
+{
+  if (line == "help")
+  {
+    printHelp();
+    return;
+  }
+
+  if (line == "radio 1")
+  {
+    sendConfigPacket(CONFIG_KEY_RADIO_TELEMETRY_ENABLE, 1);
+    return;
+  }
+
+  if (line == "radio 0")
+  {
+    sendConfigPacket(CONFIG_KEY_RADIO_TELEMETRY_ENABLE, 0);
+    return;
+  }
+
+  if (line == "sd 1")
+  {
+    sendConfigPacket(CONFIG_KEY_SD_LOG_ENABLE, 1);
+    return;
+  }
+
+  if (line == "sd 0")
+  {
+    sendConfigPacket(CONFIG_KEY_SD_LOG_ENABLE, 0);
+    return;
+  }
+
+  Serial.printf("Unknown command: %s\n", line.c_str());
+  printHelp();
+}
+
+static void processRadioRx()
+{
+  while (radio.available())
+  {
+    uint8_t packet[NRF_PAYLOAD_SIZE] = {0};
+    const uint32_t now = millis();
+    const uint32_t deltaMs = (lastPacketMs == 0U) ? 0U : (now - lastPacketMs);
+
+    radio.read(packet, sizeof(packet));
+    lastPacketMs = now;
+    rxPacketCount++;
+    statsWindowPackets++;
+    if (packet[0] == RADIO_AIR_PACKET_TYPE_TELEMETRY)
+    {
+      lastPrintedSeq = readU16Le(&packet[2]);
+    }
+
+    if (packet[0] != RADIO_AIR_PACKET_TYPE_TELEMETRY)
+    {
+      Serial.printf("RX #%lu type=0x%02X len=%u dt=%lums\n",
+                    (unsigned long)rxPacketCount,
+                    packet[0],
+                    packet[1],
+                    (unsigned long)deltaMs);
+    }
+    handleRadioPacket(packet);
+  }
+}
+
+void setup()
+{
+  Serial.begin(SERIAL_BAUDRATE);
+  delay(1000);
+
+  Serial.println();
+  Serial.println(F("ESP32-S3 nRF24 bridge boot"));
+
+  SPI.begin(PIN_NRF_SCK, PIN_NRF_MISO, PIN_NRF_MOSI, PIN_NRF_CSN);
+
+  if (!radio.begin(&SPI))
+  {
+    Serial.println(F("nRF24 init failed"));
+    while (true)
+    {
+      delay(1000);
+    }
+  }
+
+  radio.setChannel(NRF_CHANNEL);
+  radio.setPayloadSize(NRF_PAYLOAD_SIZE);
+  radio.setAutoAck(true);
+  radio.setCRCLength(RF24_CRC_8);
+  radio.setDataRate(RF24_1MBPS);
+  radio.setPALevel(RF24_PA_LOW);
+  radio.setRetries(2, 15);
+
+  radio.openWritingPipe((const uint8_t*)NRF_ADDRESS);
+  radio.openReadingPipe(1, (const uint8_t*)NRF_ADDRESS);
+  radio.flush_tx();
+  radio.flush_rx();
+  radio.startListening();
+  pinMode(PIN_NRF_IRQ, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(PIN_NRF_IRQ), onNrfIrq, FALLING);
+
+  Serial.println(F("nRF24 ready"));
+  Serial.printf("channel=0x%02X payload=%u address=%s irq=%u\n",
+                NRF_CHANNEL,
+                NRF_PAYLOAD_SIZE,
+                NRF_ADDRESS,
+                (unsigned)PIN_NRF_IRQ);
+  Serial.printf("details crc=%u dataRate=1mbps pa=LOW autoAck=ON retr=2,15 irqState=%d\n",
+                (unsigned)RF24_CRC_8,
+                digitalRead(PIN_NRF_IRQ));
+  printHelp();
+}
+
+void loop()
+{
+  while (Serial.available() > 0)
+  {
+    const char c = (char)Serial.read();
+
+    if ((c == '\n') || (c == '\r'))
+    {
+      if (serialLine.length() > 0)
+      {
+        handleCommand(serialLine);
+        serialLine = "";
+      }
+    }
+    else
+    {
+      serialLine += c;
+    }
+  }
+
+  if (g_nrfIrqPending || radio.available())
+  {
+    g_nrfIrqPending = false;
+    processRadioRx();
+  }
+
+  printRxStats();
+}

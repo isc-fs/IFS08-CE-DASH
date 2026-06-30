@@ -1,0 +1,16 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:91:5:touchgfx::colortype::colortype(uint32_t)	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:413:10:void touchgfx::Drawable::setWidthHeight(int16_t, int16_t)	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:515:10:void touchgfx::Drawable::setVisible(bool)	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:62:10:void touchgfx::Box::setColor(touchgfx::colortype)	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:89:18:virtual void touchgfx::TextArea::setAlpha(uint8_t)	16	static
+../TouchGFX/gui/include/gui/heatingup_screen/HeatingUpView.hpp:11:13:HeatingUpView::~HeatingUpView()	16	static
+../TouchGFX/gui/include/gui/heatingup_screen/HeatingUpView.hpp:11:13:virtual HeatingUpView::~HeatingUpView()	16	static
+../TouchGFX/gui/src/heatingup_screen/HeatingUpView.cpp:5:1:HeatingUpView::HeatingUpView()	16	static
+../TouchGFX/gui/src/heatingup_screen/HeatingUpView.cpp:12:6:virtual void HeatingUpView::setupScreen()	40	static
+../TouchGFX/gui/src/heatingup_screen/HeatingUpView.cpp:46:6:virtual void HeatingUpView::tearDownScreen()	16	static
+../TouchGFX/gui/src/heatingup_screen/HeatingUpView.cpp:51:6:virtual void HeatingUpView::handleTickEvent()	16	static

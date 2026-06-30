@@ -1,0 +1,314 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+# Toolchain: GNU Tools for STM32 (13.3.rel1)
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_000.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_002.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_004.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_006.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_008.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_010.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_012.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_014.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_016.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_018.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_020.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_022.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_024.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_026.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_028.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_030.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_032.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_034.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_036.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_038.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_040.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_042.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_044.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_046.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_048.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_050.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_052.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_054.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_056.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_058.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_060.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_062.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_064.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_066.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_068.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_070.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_072.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_074.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_076.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_078.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_080.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_082.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_084.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_086.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_088.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_090.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_092.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_094.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_096.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_098.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_100.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_102.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_104.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_106.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_108.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_110.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_112.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_114.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_116.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_118.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_120.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_122.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_124.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_126.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_128.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_130.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_132.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_134.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_136.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_138.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_140.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_142.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_144.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_146.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_148.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_150.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_152.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_154.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_156.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_158.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_160.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_162.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_164.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_166.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_168.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_170.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_172.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_174.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_176.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_178.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_180.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_182.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_184.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_186.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_187.cpp 
+
+OBJS += \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_000.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_002.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_004.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_006.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_008.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_010.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_012.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_014.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_016.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_018.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_020.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_022.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_024.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_026.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_028.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_030.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_032.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_034.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_036.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_038.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_040.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_042.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_044.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_046.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_048.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_050.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_052.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_054.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_056.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_058.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_060.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_062.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_064.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_066.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_068.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_070.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_072.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_074.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_076.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_078.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_080.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_082.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_084.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_086.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_088.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_090.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_092.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_094.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_096.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_098.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_100.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_102.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_104.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_106.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_108.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_110.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_112.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_114.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_116.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_118.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_120.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_122.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_124.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_126.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_128.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_130.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_132.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_134.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_136.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_138.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_140.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_142.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_144.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_146.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_148.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_150.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_152.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_154.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_156.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_158.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_160.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_162.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_164.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_166.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_168.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_170.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_172.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_174.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_176.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_178.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_180.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_182.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_184.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_186.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_187.o 
+
+CPP_DEPS += \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_000.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_002.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_004.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_006.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_008.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_010.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_012.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_014.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_016.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_018.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_020.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_022.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_024.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_026.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_028.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_030.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_032.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_034.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_036.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_038.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_040.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_042.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_044.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_046.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_048.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_050.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_052.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_054.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_056.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_058.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_060.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_062.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_064.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_066.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_068.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_070.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_072.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_074.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_076.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_078.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_080.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_082.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_084.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_086.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_088.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_090.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_092.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_094.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_096.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_098.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_100.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_102.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_104.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_106.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_108.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_110.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_112.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_114.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_116.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_118.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_120.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_122.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_124.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_126.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_128.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_130.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_132.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_134.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_136.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_138.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_140.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_142.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_144.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_146.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_148.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_150.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_152.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_154.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_156.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_158.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_160.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_162.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_164.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_166.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_168.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_170.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_172.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_174.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_176.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_178.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_180.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_182.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_184.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_186.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_187.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/%.o TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/%.su TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/%.cyclo: ../TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/%.cpp TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/subdir.mk
+	arm-none-eabi-g++ "$<" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_PWR_LDO_SUPPLY -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Utilities/JPEG -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -I../Middlewares/ST/touchgfx/framework/include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../TouchGFX/generated/fonts/include -I../TouchGFX/generated/gui_generated/include -I../TouchGFX/generated/images/include -I../TouchGFX/generated/texts/include -I../TouchGFX/generated/videos/include -I../TouchGFX/gui/include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@"
+
+clean: clean-TouchGFX-2f-generated-2f-images-2f-src-2f-Brewing-2f-AnimatedMacchiato
+
+clean-TouchGFX-2f-generated-2f-images-2f-src-2f-Brewing-2f-AnimatedMacchiato:
+	-$(RM) ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_000.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_000.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_000.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_000.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_002.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_002.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_002.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_002.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_004.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_004.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_004.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_004.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_006.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_006.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_006.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_006.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_008.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_008.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_008.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_008.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_010.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_010.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_010.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_010.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_012.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_012.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_012.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_012.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_014.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_014.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_014.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_014.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_016.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_016.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_016.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_016.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_018.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_018.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_018.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_018.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_020.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_020.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_020.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_020.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_022.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_022.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_022.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_022.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_024.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_024.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_024.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_024.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_026.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_026.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_026.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_026.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_028.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_028.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_028.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_028.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_030.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_030.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_030.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_030.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_032.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_032.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_032.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_032.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_034.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_034.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_034.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_034.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_036.cyclo
+	-$(RM) ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_036.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_036.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_036.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_038.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_038.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_038.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_038.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_040.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_040.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_040.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_040.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_042.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_042.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_042.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_042.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_044.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_044.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_044.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_044.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_046.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_046.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_046.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_046.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_048.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_048.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_048.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_048.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_050.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_050.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_050.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_050.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_052.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_052.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_052.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_052.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_054.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_054.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_054.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_054.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_056.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_056.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_056.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_056.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_058.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_058.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_058.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_058.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_060.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_060.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_060.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_060.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_062.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_062.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_062.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_062.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_064.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_064.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_064.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_064.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_066.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_066.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_066.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_066.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_068.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_068.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_068.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_068.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_070.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_070.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_070.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_070.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_072.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_072.d
+	-$(RM) ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_072.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_072.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_074.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_074.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_074.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_074.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_076.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_076.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_076.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_076.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_078.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_078.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_078.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_078.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_080.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_080.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_080.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_080.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_082.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_082.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_082.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_082.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_084.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_084.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_084.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_084.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_086.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_086.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_086.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_086.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_088.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_088.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_088.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_088.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_090.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_090.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_090.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_090.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_092.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_092.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_092.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_092.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_094.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_094.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_094.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_094.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_096.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_096.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_096.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_096.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_098.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_098.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_098.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_098.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_100.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_100.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_100.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_100.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_102.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_102.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_102.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_102.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_104.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_104.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_104.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_104.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_106.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_106.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_106.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_106.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_108.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_108.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_108.o
+	-$(RM) ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_108.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_110.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_110.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_110.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_110.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_112.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_112.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_112.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_112.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_114.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_114.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_114.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_114.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_116.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_116.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_116.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_116.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_118.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_118.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_118.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_118.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_120.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_120.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_120.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_120.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_122.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_122.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_122.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_122.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_124.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_124.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_124.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_124.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_126.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_126.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_126.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_126.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_128.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_128.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_128.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_128.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_130.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_130.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_130.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_130.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_132.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_132.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_132.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_132.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_134.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_134.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_134.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_134.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_136.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_136.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_136.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_136.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_138.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_138.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_138.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_138.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_140.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_140.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_140.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_140.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_142.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_142.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_142.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_142.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_144.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_144.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_144.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_144.su
+	-$(RM) ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_146.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_146.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_146.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_146.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_148.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_148.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_148.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_148.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_150.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_150.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_150.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_150.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_152.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_152.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_152.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_152.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_154.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_154.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_154.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_154.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_156.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_156.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_156.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_156.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_158.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_158.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_158.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_158.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_160.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_160.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_160.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_160.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_162.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_162.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_162.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_162.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_164.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_164.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_164.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_164.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_166.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_166.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_166.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_166.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_168.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_168.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_168.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_168.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_170.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_170.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_170.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_170.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_172.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_172.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_172.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_172.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_174.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_174.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_174.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_174.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_176.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_176.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_176.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_176.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_178.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_178.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_178.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_178.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_180.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_180.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_180.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_180.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_182.cyclo
+	-$(RM) ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_182.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_182.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_182.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_184.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_184.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_184.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_184.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_186.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_186.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_186.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_186.su ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_187.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_187.d ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_187.o ./TouchGFX/generated/images/src/Brewing/AnimatedMacchiato/image_macchaito_187.su
+
+.PHONY: clean-TouchGFX-2f-generated-2f-images-2f-src-2f-Brewing-2f-AnimatedMacchiato
+

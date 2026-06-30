@@ -1,0 +1,17 @@
+../FATFS/Target/bsp_driver_sd.c:38:13:BSP_SD_LogHalFailure	216	static
+../FATFS/Target/bsp_driver_sd.c:63:16:BSP_SD_Init	16	static
+../FATFS/Target/bsp_driver_sd.c:113:16:BSP_SD_ITConfig	4	static
+../FATFS/Target/bsp_driver_sd.c:133:16:BSP_SD_ReadBlocks	40	static
+../FATFS/Target/bsp_driver_sd.c:177:16:BSP_SD_WriteBlocks	40	static
+../FATFS/Target/bsp_driver_sd.c:220:16:BSP_SD_ReadBlocks_DMA	32	static
+../FATFS/Target/bsp_driver_sd.c:246:16:BSP_SD_WriteBlocks_DMA	32	static
+../FATFS/Target/bsp_driver_sd.c:271:16:BSP_SD_Erase	24	static
+../FATFS/Target/bsp_driver_sd.c:298:16:BSP_SD_GetCardState	8	static
+../FATFS/Target/bsp_driver_sd.c:308:13:BSP_SD_GetCardInfo	16	static
+../FATFS/Target/bsp_driver_sd.c:322:6:HAL_SD_AbortCallback	16	static
+../FATFS/Target/bsp_driver_sd.c:332:6:HAL_SD_TxCpltCallback	16	static
+../FATFS/Target/bsp_driver_sd.c:342:6:HAL_SD_RxCpltCallback	16	static
+../FATFS/Target/bsp_driver_sd.c:353:13:BSP_SD_AbortCallback	4	static
+../FATFS/Target/bsp_driver_sd.c:363:13:BSP_SD_WriteCpltCallback	4	static
+../FATFS/Target/bsp_driver_sd.c:373:13:BSP_SD_ReadCpltCallback	4	static
+../FATFS/Target/bsp_driver_sd.c:384:16:BSP_SD_IsDetected	16	static

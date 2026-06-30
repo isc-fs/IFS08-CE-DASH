@@ -1,0 +1,5 @@
+../Core/Src/can_telemetry_backup.c:7:6:CanTelemetryBackup_Init	1
+../Core/Src/can_telemetry_backup.c:13:6:CanTelemetryBackup_OnSnapshotReady	7
+../Core/Src/can_telemetry_backup.c:62:16:CanTelemetryBackup_LoadLatest	4
+../Core/Src/can_telemetry_backup.c:87:6:CanTelemetryBackup_GetStats	2
+../Core/Src/can_telemetry_backup.c:97:6:CanTelemetryBackup_LogStatus	1

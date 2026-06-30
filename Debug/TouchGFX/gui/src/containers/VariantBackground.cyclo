@@ -1,0 +1,27 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:91:5:touchgfx::colortype::colortype(uint32_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Bitmap.hpp:136:5:touchgfx::Bitmap::Bitmap(touchgfx::BitmapId)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp:187:10:void touchgfx::Application::registerTimerWidget(touchgfx::Drawable*)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:62:10:void touchgfx::Box::setColor(touchgfx::colortype)	1
+../TouchGFX/gui/include/gui/containers/VariantBackground.hpp:31:13:VariantBackground::~VariantBackground()	1
+../TouchGFX/gui/include/gui/containers/VariantBackground.hpp:31:13:virtual VariantBackground::~VariantBackground()	1
+../TouchGFX/gui/src/containers/VariantBackground.cpp:6:1:VariantBackground::VariantBackground()	1
+../TouchGFX/gui/src/containers/VariantBackground.cpp:11:6:virtual void VariantBackground::initialize()	1
+../TouchGFX/gui/src/containers/VariantBackground.cpp:16:6:void VariantBackground::updateBackground(int)	9
+../TouchGFX/gui/src/containers/VariantBackground.cpp:67:6:virtual void VariantBackground::animateCup(int16_t)	5
+../TouchGFX/gui/src/containers/VariantBackground.cpp:85:6:virtual void VariantBackground::endOfDrag()	2
+../TouchGFX/gui/src/containers/VariantBackground.cpp:103:6:void VariantBackground::updateCupAngle(float)	1
+../TouchGFX/gui/src/containers/VariantBackground.cpp:108:6:virtual void VariantBackground::handleTickEvent()	2
+../TouchGFX/gui/src/containers/VariantBackground.cpp:116:6:virtual void VariantBackground::SWING_STATEMACHINE()	21
+../TouchGFX/gui/src/containers/VariantBackground.cpp:182:6:virtual void VariantBackground::fadeOutElements()	1
+../TouchGFX/gui/src/containers/VariantBackground.cpp:187:6:virtual void VariantBackground::fadeInElements()	1

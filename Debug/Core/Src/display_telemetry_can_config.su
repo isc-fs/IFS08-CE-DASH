@@ -1,0 +1,5 @@
+../Core/Src/display_telemetry_can_config.c:149:41:DisplayTelemetryCanConfig_GetAll	16	static
+../Core/Src/display_telemetry_can_config.c:159:41:DisplayTelemetryCanConfig_FindById	32	static
+../Core/Src/display_telemetry_can_config.c:175:10:DisplayTelemetryCanConfig_GetMinId	4	static
+../Core/Src/display_telemetry_can_config.c:180:10:DisplayTelemetryCanConfig_GetMaxId	4	static
+../Core/Src/display_telemetry_can_config.c:185:10:DisplayTelemetryCanConfig_GetSnapshotMaskAll	24	static

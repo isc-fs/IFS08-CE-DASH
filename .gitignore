@@ -1,0 +1,5 @@
+.claude/
+Documentacion/
+*.md
+*.MD
+Debug/NUL.*

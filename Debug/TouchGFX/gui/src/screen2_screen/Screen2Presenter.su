@@ -1,0 +1,25 @@
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:37:18:virtual void touchgfx::Presenter::activate()	16	static
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:47:18:virtual void touchgfx::Presenter::deactivate()	16	static
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:52:13:touchgfx::Presenter::~Presenter()	16	static
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:52:13:virtual touchgfx::Presenter::~Presenter()	16	static
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:58:5:touchgfx::Presenter::Presenter()	16	static
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:9:5:ModelListener::ModelListener()	16	static
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:11:13:ModelListener::~ModelListener()	16	static
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:11:13:virtual ModelListener::~ModelListener()	16	static
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:18:18:virtual void ModelListener::setNewValue(unsigned int)	16	static
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:19:18:virtual void ModelListener::setPantalla(unsigned int)	16	static
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:20:18:virtual void ModelListener::setUpBoton(unsigned int)	16	static
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:21:18:virtual void ModelListener::setDownBoton(unsigned int)	16	static
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:22:18:virtual void ModelListener::setSelectBoton(unsigned int)	16	static
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:23:18:virtual void ModelListener::setNewData(int*)	16	static
+../TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp:28:13:Screen2Presenter::~Screen2Presenter()	16	static
+../TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp:28:13:virtual Screen2Presenter::~Screen2Presenter()	16	static
+../TouchGFX/gui/src/screen2_screen/Screen2Presenter.cpp:4:1:Screen2Presenter::Screen2Presenter(Screen2View&)	16	static
+../TouchGFX/gui/src/screen2_screen/Screen2Presenter.cpp:10:6:virtual void Screen2Presenter::activate()	16	static
+../TouchGFX/gui/src/screen2_screen/Screen2Presenter.cpp:15:6:virtual void Screen2Presenter::deactivate()	16	static
+../TouchGFX/gui/src/screen2_screen/Screen2Presenter.cpp:19:6:virtual void Screen2Presenter::setNewValue(unsigned int)	16	static
+../TouchGFX/gui/src/screen2_screen/Screen2Presenter.cpp:24:6:virtual void Screen2Presenter::setPantalla(unsigned int)	16	static
+../TouchGFX/gui/src/screen2_screen/Screen2Presenter.cpp:29:6:virtual void Screen2Presenter::setUpBoton(unsigned int)	16	static
+../TouchGFX/gui/src/screen2_screen/Screen2Presenter.cpp:34:6:virtual void Screen2Presenter::setDownBoton(unsigned int)	16	static
+../TouchGFX/gui/src/screen2_screen/Screen2Presenter.cpp:39:6:virtual void Screen2Presenter::setSelectBoton(unsigned int)	16	static
+../TouchGFX/gui/src/screen2_screen/Screen2Presenter.cpp:44:6:virtual void Screen2Presenter::setNewData(int*)	16	static

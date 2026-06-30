@@ -1,0 +1,23 @@
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:37:18:virtual void touchgfx::Presenter::activate()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:47:18:virtual void touchgfx::Presenter::deactivate()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:52:13:touchgfx::Presenter::~Presenter()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:52:13:virtual touchgfx::Presenter::~Presenter()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:58:5:touchgfx::Presenter::Presenter()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:9:5:ModelListener::ModelListener()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:11:13:ModelListener::~ModelListener()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:11:13:virtual ModelListener::~ModelListener()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:13:18:virtual void ModelListener::onTick()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:14:18:virtual void ModelListener::onPedalValueChanged(uint16_t)	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:15:18:virtual void ModelListener::onDisplayTelemetryChanged(const UiTelemetry&)	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:16:18:virtual void ModelListener::onUiButtonPressed(UiButtonId)	1
+../TouchGFX/gui/include/gui/param_screen/ParamPresenter.hpp:30:13:ParamPresenter::~ParamPresenter()	1
+../TouchGFX/gui/include/gui/param_screen/ParamPresenter.hpp:30:13:virtual ParamPresenter::~ParamPresenter()	1
+../TouchGFX/gui/src/param_screen/ParamPresenter.cpp:7:9:uint8_t {anonymous}::wrapSelection(int, uint8_t)	4
+../TouchGFX/gui/src/param_screen/ParamPresenter.cpp:28:1:ParamPresenter::ParamPresenter(ParamView&)	1
+../TouchGFX/gui/src/param_screen/ParamPresenter.cpp:45:6:virtual void ParamPresenter::activate()	2
+../TouchGFX/gui/src/param_screen/ParamPresenter.cpp:53:6:virtual void ParamPresenter::deactivate()	1
+../TouchGFX/gui/src/param_screen/ParamPresenter.cpp:58:6:virtual void ParamPresenter::onTick()	9
+../TouchGFX/gui/src/param_screen/ParamPresenter.cpp:79:6:virtual void ParamPresenter::onUiButtonPressed(UiButtonId)	23
+../TouchGFX/gui/src/param_screen/ParamPresenter.cpp:207:6:void ParamPresenter::refreshView()	5
+../TouchGFX/gui/src/param_screen/ParamPresenter.cpp:252:6:void ParamPresenter::syncAlertValues()	2
+../TouchGFX/gui/src/param_screen/ParamPresenter.cpp:260:6:void ParamPresenter::adjustEditingValue(int)	4

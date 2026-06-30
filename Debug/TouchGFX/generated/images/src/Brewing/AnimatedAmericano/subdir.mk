@@ -1,0 +1,314 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+# Toolchain: GNU Tools for STM32 (13.3.rel1)
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_000.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_002.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_004.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_006.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_008.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_010.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_012.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_014.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_016.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_018.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_020.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_022.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_024.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_026.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_028.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_030.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_032.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_034.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_036.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_038.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_040.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_042.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_044.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_046.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_048.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_050.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_052.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_054.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_056.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_058.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_060.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_062.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_064.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_066.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_068.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_070.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_072.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_074.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_076.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_078.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_080.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_082.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_084.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_086.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_088.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_090.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_092.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_094.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_096.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_098.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_100.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_102.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_104.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_106.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_108.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_110.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_112.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_114.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_116.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_118.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_120.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_122.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_124.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_126.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_128.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_130.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_132.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_134.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_136.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_138.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_140.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_142.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_144.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_146.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_148.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_150.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_152.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_154.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_156.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_158.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_160.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_162.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_164.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_166.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_168.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_170.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_172.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_174.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_176.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_178.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_180.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_182.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_184.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_186.cpp \
+../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_187.cpp 
+
+OBJS += \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_000.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_002.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_004.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_006.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_008.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_010.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_012.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_014.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_016.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_018.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_020.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_022.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_024.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_026.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_028.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_030.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_032.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_034.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_036.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_038.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_040.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_042.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_044.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_046.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_048.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_050.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_052.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_054.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_056.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_058.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_060.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_062.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_064.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_066.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_068.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_070.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_072.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_074.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_076.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_078.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_080.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_082.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_084.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_086.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_088.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_090.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_092.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_094.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_096.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_098.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_100.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_102.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_104.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_106.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_108.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_110.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_112.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_114.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_116.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_118.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_120.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_122.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_124.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_126.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_128.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_130.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_132.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_134.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_136.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_138.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_140.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_142.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_144.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_146.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_148.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_150.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_152.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_154.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_156.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_158.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_160.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_162.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_164.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_166.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_168.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_170.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_172.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_174.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_176.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_178.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_180.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_182.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_184.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_186.o \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_187.o 
+
+CPP_DEPS += \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_000.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_002.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_004.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_006.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_008.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_010.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_012.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_014.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_016.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_018.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_020.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_022.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_024.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_026.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_028.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_030.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_032.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_034.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_036.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_038.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_040.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_042.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_044.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_046.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_048.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_050.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_052.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_054.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_056.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_058.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_060.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_062.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_064.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_066.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_068.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_070.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_072.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_074.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_076.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_078.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_080.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_082.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_084.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_086.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_088.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_090.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_092.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_094.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_096.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_098.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_100.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_102.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_104.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_106.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_108.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_110.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_112.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_114.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_116.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_118.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_120.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_122.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_124.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_126.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_128.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_130.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_132.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_134.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_136.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_138.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_140.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_142.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_144.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_146.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_148.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_150.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_152.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_154.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_156.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_158.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_160.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_162.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_164.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_166.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_168.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_170.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_172.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_174.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_176.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_178.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_180.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_182.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_184.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_186.d \
+./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_187.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+TouchGFX/generated/images/src/Brewing/AnimatedAmericano/%.o TouchGFX/generated/images/src/Brewing/AnimatedAmericano/%.su TouchGFX/generated/images/src/Brewing/AnimatedAmericano/%.cyclo: ../TouchGFX/generated/images/src/Brewing/AnimatedAmericano/%.cpp TouchGFX/generated/images/src/Brewing/AnimatedAmericano/subdir.mk
+	arm-none-eabi-g++ "$<" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_PWR_LDO_SUPPLY -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Utilities/JPEG -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -I../Middlewares/ST/touchgfx/framework/include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../TouchGFX/generated/fonts/include -I../TouchGFX/generated/gui_generated/include -I../TouchGFX/generated/images/include -I../TouchGFX/generated/texts/include -I../TouchGFX/generated/videos/include -I../TouchGFX/gui/include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@"
+
+clean: clean-TouchGFX-2f-generated-2f-images-2f-src-2f-Brewing-2f-AnimatedAmericano
+
+clean-TouchGFX-2f-generated-2f-images-2f-src-2f-Brewing-2f-AnimatedAmericano:
+	-$(RM) ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_000.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_000.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_000.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_000.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_002.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_002.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_002.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_002.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_004.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_004.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_004.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_004.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_006.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_006.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_006.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_006.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_008.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_008.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_008.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_008.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_010.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_010.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_010.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_010.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_012.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_012.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_012.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_012.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_014.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_014.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_014.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_014.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_016.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_016.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_016.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_016.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_018.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_018.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_018.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_018.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_020.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_020.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_020.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_020.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_022.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_022.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_022.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_022.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_024.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_024.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_024.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_024.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_026.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_026.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_026.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_026.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_028.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_028.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_028.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_028.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_030.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_030.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_030.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_030.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_032.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_032.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_032.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_032.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_034.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_034.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_034.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_034.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_036.cyclo
+	-$(RM) ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_036.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_036.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_036.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_038.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_038.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_038.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_038.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_040.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_040.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_040.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_040.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_042.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_042.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_042.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_042.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_044.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_044.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_044.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_044.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_046.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_046.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_046.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_046.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_048.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_048.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_048.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_048.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_050.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_050.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_050.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_050.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_052.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_052.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_052.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_052.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_054.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_054.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_054.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_054.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_056.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_056.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_056.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_056.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_058.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_058.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_058.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_058.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_060.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_060.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_060.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_060.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_062.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_062.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_062.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_062.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_064.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_064.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_064.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_064.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_066.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_066.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_066.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_066.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_068.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_068.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_068.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_068.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_070.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_070.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_070.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_070.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_072.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_072.d
+	-$(RM) ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_072.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_072.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_074.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_074.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_074.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_074.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_076.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_076.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_076.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_076.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_078.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_078.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_078.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_078.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_080.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_080.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_080.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_080.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_082.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_082.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_082.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_082.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_084.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_084.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_084.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_084.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_086.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_086.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_086.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_086.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_088.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_088.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_088.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_088.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_090.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_090.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_090.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_090.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_092.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_092.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_092.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_092.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_094.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_094.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_094.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_094.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_096.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_096.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_096.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_096.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_098.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_098.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_098.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_098.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_100.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_100.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_100.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_100.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_102.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_102.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_102.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_102.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_104.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_104.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_104.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_104.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_106.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_106.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_106.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_106.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_108.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_108.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_108.o
+	-$(RM) ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_108.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_110.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_110.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_110.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_110.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_112.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_112.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_112.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_112.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_114.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_114.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_114.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_114.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_116.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_116.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_116.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_116.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_118.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_118.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_118.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_118.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_120.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_120.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_120.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_120.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_122.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_122.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_122.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_122.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_124.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_124.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_124.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_124.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_126.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_126.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_126.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_126.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_128.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_128.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_128.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_128.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_130.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_130.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_130.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_130.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_132.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_132.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_132.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_132.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_134.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_134.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_134.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_134.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_136.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_136.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_136.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_136.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_138.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_138.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_138.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_138.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_140.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_140.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_140.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_140.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_142.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_142.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_142.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_142.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_144.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_144.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_144.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_144.su
+	-$(RM) ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_146.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_146.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_146.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_146.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_148.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_148.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_148.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_148.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_150.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_150.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_150.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_150.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_152.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_152.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_152.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_152.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_154.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_154.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_154.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_154.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_156.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_156.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_156.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_156.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_158.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_158.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_158.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_158.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_160.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_160.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_160.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_160.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_162.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_162.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_162.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_162.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_164.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_164.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_164.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_164.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_166.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_166.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_166.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_166.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_168.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_168.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_168.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_168.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_170.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_170.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_170.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_170.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_172.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_172.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_172.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_172.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_174.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_174.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_174.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_174.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_176.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_176.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_176.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_176.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_178.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_178.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_178.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_178.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_180.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_180.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_180.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_180.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_182.cyclo
+	-$(RM) ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_182.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_182.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_182.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_184.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_184.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_184.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_184.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_186.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_186.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_186.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_186.su ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_187.cyclo ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_187.d ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_187.o ./TouchGFX/generated/images/src/Brewing/AnimatedAmericano/image_americano_187.su
+
+.PHONY: clean-TouchGFX-2f-generated-2f-images-2f-src-2f-Brewing-2f-AnimatedAmericano
+

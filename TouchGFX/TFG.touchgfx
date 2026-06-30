@@ -1,0 +1,3275 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Arranque",
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 301,
+            "Y": 216,
+            "Width": 162,
+            "Height": 48,
+            "TextId": "__SingleUse_0GZE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 120
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Info"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Info",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "telemetry_header_box",
+            "Width": 800,
+            "Height": 56,
+            "Color": {
+              "Red": 22,
+              "Green": 64,
+              "Blue": 36
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "telemetry_content_box",
+            "X": 18,
+            "Y": 69,
+            "Width": 764,
+            "Height": 372,
+            "Color": {
+              "Red": 18,
+              "Green": 18,
+              "Blue": 18
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "telemetry_footer_box",
+            "X": -3,
+            "Y": 452,
+            "Width": 328,
+            "Height": 28,
+            "Color": {
+              "Red": 214,
+              "Green": 54,
+              "Blue": 56
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "telemetry_title",
+            "X": 24,
+            "Y": 12,
+            "Width": 94,
+            "Height": 24,
+            "TextId": "Telemetry_Title",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tab_home",
+            "X": 282,
+            "Y": 12,
+            "Width": 55,
+            "Height": 24,
+            "TextId": "Telemetry_Home",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tab_drive",
+            "X": 390,
+            "Y": 12,
+            "Width": 50,
+            "Height": 24,
+            "TextId": "Telemetry_Drive",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 170,
+              "Green": 170,
+              "Blue": 170
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tab_battery",
+            "X": 494,
+            "Y": 12,
+            "Width": 69,
+            "Height": 24,
+            "TextId": "Telemetry_Battery",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 170,
+              "Green": 170,
+              "Blue": 170
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tab_thermal",
+            "X": 620,
+            "Y": 12,
+            "Width": 78,
+            "Height": 24,
+            "TextId": "Telemetry_Thermal",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 170,
+              "Green": 170,
+              "Blue": 170
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "telemetry_footer_text",
+            "X": 24,
+            "Y": 456,
+            "Width": 222,
+            "Height": 24,
+            "TextId": "__SingleUse_WGT7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "Sd_Footer_Default",
+              "UseBuffer": true,
+              "BufferSize": 32
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "alerts_indicator_box",
+            "X": 640,
+            "Y": 452,
+            "Width": 160,
+            "Height": 28,
+            "Visible": false,
+            "Color": {
+              "Red": 214,
+              "Green": 54,
+              "Blue": 56
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "alerts_indicator_text",
+            "X": 676,
+            "Y": 456,
+            "Width": 71,
+            "Height": 24,
+            "Visible": false,
+            "TextId": "Alerts_Indicator",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "Container",
+            "Name": "page_home",
+            "X": 30,
+            "Y": 84,
+            "Width": 740,
+            "Height": 340,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "home_box_1",
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 70,
+                  "Green": 227,
+                  "Blue": 149
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_label_1",
+                "X": 12,
+                "Y": 5,
+                "Width": 89,
+                "Height": 24,
+                "TextId": "Field_EcuFsm",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_value_1",
+                "X": 222,
+                "Y": 5,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "home_box_2",
+                "Y": 42,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 70,
+                  "Green": 227,
+                  "Blue": 149
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_label_2",
+                "X": 12,
+                "Y": 47,
+                "Width": 97,
+                "Height": 24,
+                "TextId": "Field_AmsState",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_value_2",
+                "X": 222,
+                "Y": 47,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "home_box_3",
+                "Y": 84,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 70,
+                  "Green": 227,
+                  "Blue": 149
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_label_3",
+                "X": 12,
+                "Y": 89,
+                "Width": 97,
+                "Height": 24,
+                "TextId": "Field_Precharge",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_value_3",
+                "X": 222,
+                "Y": 89,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "home_box_4",
+                "Y": 126,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 70,
+                  "Green": 227,
+                  "Blue": 149
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_label_4",
+                "X": 12,
+                "Y": 131,
+                "Width": 43,
+                "Height": 24,
+                "TextId": "Field_Soc",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_value_4",
+                "X": 222,
+                "Y": 131,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "home_box_5",
+                "Y": 168,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 70,
+                  "Green": 227,
+                  "Blue": 149
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_label_5",
+                "X": 12,
+                "Y": 173,
+                "Width": 82,
+                "Height": 24,
+                "TextId": "Field_InvState",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_value_5",
+                "X": 222,
+                "Y": 173,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "home_box_6",
+                "Y": 210,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 70,
+                  "Green": 227,
+                  "Blue": 149
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_label_6",
+                "X": 12,
+                "Y": 215,
+                "Width": 82,
+                "Height": 24,
+                "TextId": "Field_InvError",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_value_6",
+                "X": 222,
+                "Y": 215,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "home_box_7",
+                "Y": 252,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 70,
+                  "Green": 227,
+                  "Blue": 149
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_label_7",
+                "X": 12,
+                "Y": 257,
+                "Width": 69,
+                "Height": 24,
+                "TextId": "Field_DcBus",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_value_7",
+                "X": 222,
+                "Y": 257,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "home_box_8",
+                "Y": 294,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 70,
+                  "Green": 227,
+                  "Blue": 149
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_label_8",
+                "X": 12,
+                "Y": 299,
+                "Width": 53,
+                "Height": 24,
+                "TextId": "Field_Accel1",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_value_8",
+                "X": 222,
+                "Y": 299,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "home_box_9",
+                "X": 382,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 70,
+                  "Green": 227,
+                  "Blue": 149
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_label_9",
+                "X": 394,
+                "Y": 5,
+                "Width": 55,
+                "Height": 24,
+                "TextId": "Field_Brake",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_value_9",
+                "X": 604,
+                "Y": 5,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "page_drive",
+            "X": 30,
+            "Y": 84,
+            "Width": 740,
+            "Height": 340,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "drive_box_1",
+                "Width": 360,
+                "Height": 96,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 80,
+                  "Green": 150,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "drive_label_1",
+                "X": 20,
+                "Y": 14,
+                "Width": 92,
+                "Height": 24,
+                "TextId": "Field_InvSpeed",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "drive_value_1",
+                "X": 210,
+                "Y": 17,
+                "Width": 33,
+                "Height": 62,
+                "TextId": "__SingleUse_NTUR",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "drive_box_2",
+                "X": 382,
+                "Width": 340,
+                "Height": 96,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 80,
+                  "Green": 150,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "drive_label_2",
+                "X": 402,
+                "Y": 14,
+                "Width": 79,
+                "Height": 24,
+                "TextId": "Field_InvRpm",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "drive_value_2",
+                "X": 574,
+                "Y": 17,
+                "Width": 33,
+                "Height": 62,
+                "TextId": "__SingleUse_NTUR",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "drive_box_3",
+                "Y": 112,
+                "Width": 360,
+                "Height": 96,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 80,
+                  "Green": 150,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "drive_label_3",
+                "X": 20,
+                "Y": 126,
+                "Width": 66,
+                "Height": 24,
+                "TextId": "Field_Torque",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "drive_value_3",
+                "X": 210,
+                "Y": 126,
+                "Width": 33,
+                "Height": 62,
+                "TextId": "__SingleUse_NTUR",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "drive_box_4",
+                "X": 382,
+                "Y": 112,
+                "Width": 340,
+                "Height": 96,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 80,
+                  "Green": 150,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "drive_label_4",
+                "X": 402,
+                "Y": 126,
+                "Width": 104,
+                "Height": 24,
+                "TextId": "Field_InvCurrent",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "drive_value_4",
+                "X": 574,
+                "Y": 126,
+                "Width": 33,
+                "Height": 62,
+                "TextId": "__SingleUse_NTUR",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "drive_box_5",
+                "Y": 224,
+                "Width": 229,
+                "Height": 96,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 80,
+                  "Green": 150,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "drive_label_5",
+                "X": 14,
+                "Y": 234,
+                "Width": 53,
+                "Height": 24,
+                "TextId": "Field_Accel1",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "drive_value_5",
+                "X": 136,
+                "Y": 246,
+                "Width": 33,
+                "Height": 62,
+                "TextId": "__SingleUse_NTUR",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "drive_box_6",
+                "X": 254,
+                "Y": 224,
+                "Width": 227,
+                "Height": 96,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 80,
+                  "Green": 150,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "drive_label_6",
+                "X": 268,
+                "Y": 234,
+                "Width": 55,
+                "Height": 24,
+                "TextId": "Field_Brake",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "drive_value_6",
+                "X": 382,
+                "Y": 246,
+                "Width": 33,
+                "Height": 62,
+                "TextId": "__SingleUse_NTUR",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "drive_box_7",
+                "X": 508,
+                "Y": 224,
+                "Width": 214,
+                "Height": 96,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 80,
+                  "Green": 150,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "drive_label_7",
+                "X": 522,
+                "Y": 234,
+                "Width": 59,
+                "Height": 24,
+                "TextId": "Field_GpsSpeed",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "drive_value_7",
+                "X": 607,
+                "Y": 246,
+                "Width": 33,
+                "Height": 62,
+                "TextId": "__SingleUse_NTUR",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "page_battery",
+            "X": 30,
+            "Y": 84,
+            "Width": 740,
+            "Height": 340,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_1",
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_1",
+                "X": 12,
+                "Y": 5,
+                "Width": 43,
+                "Height": 24,
+                "TextId": "Field_Soc",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_1",
+                "X": 222,
+                "Y": 5,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_2",
+                "Y": 42,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_2",
+                "X": 12,
+                "Y": 47,
+                "Width": 94,
+                "Height": 24,
+                "TextId": "Field_VCellMin",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_2",
+                "X": 222,
+                "Y": 47,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_3",
+                "Y": 84,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_3",
+                "X": 12,
+                "Y": 89,
+                "Width": 57,
+                "Height": 24,
+                "TextId": "Field_IAccu",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_3",
+                "X": 222,
+                "Y": 89,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_4",
+                "Y": 126,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_4",
+                "X": 12,
+                "Y": 131,
+                "Width": 58,
+                "Height": 24,
+                "TextId": "Field_IDcdc",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_4",
+                "X": 222,
+                "Y": 131,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_5",
+                "Y": 168,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_5",
+                "X": 12,
+                "Y": 173,
+                "Width": 54,
+                "Height": 24,
+                "TextId": "Field_VBus",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_5",
+                "X": 222,
+                "Y": 173,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_6",
+                "Y": 210,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_6",
+                "X": 12,
+                "Y": 215,
+                "Width": 83,
+                "Height": 24,
+                "TextId": "Field_VminM0",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_6",
+                "X": 222,
+                "Y": 215,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_7",
+                "Y": 252,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_7",
+                "X": 12,
+                "Y": 257,
+                "Width": 83,
+                "Height": 24,
+                "TextId": "Field_VminM1",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_7",
+                "X": 222,
+                "Y": 257,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_8",
+                "Y": 294,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_8",
+                "X": 12,
+                "Y": 299,
+                "Width": 83,
+                "Height": 24,
+                "TextId": "Field_VminM2",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_8",
+                "X": 222,
+                "Y": 299,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_9",
+                "X": 382,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_9",
+                "X": 394,
+                "Y": 5,
+                "Width": 83,
+                "Height": 24,
+                "TextId": "Field_VminM3",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_9",
+                "X": 604,
+                "Y": 5,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_10",
+                "X": 382,
+                "Y": 42,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_10",
+                "X": 394,
+                "Y": 47,
+                "Width": 83,
+                "Height": 24,
+                "TextId": "Field_VminM4",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_10",
+                "X": 604,
+                "Y": 47,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_11",
+                "X": 382,
+                "Y": 84,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_11",
+                "X": 394,
+                "Y": 89,
+                "Width": 87,
+                "Height": 24,
+                "TextId": "Field_VmaxM0",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_11",
+                "X": 604,
+                "Y": 89,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_12",
+                "X": 382,
+                "Y": 126,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_12",
+                "X": 394,
+                "Y": 131,
+                "Width": 87,
+                "Height": 24,
+                "TextId": "Field_VmaxM1",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_12",
+                "X": 604,
+                "Y": 131,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_13",
+                "X": 382,
+                "Y": 168,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_13",
+                "X": 394,
+                "Y": 173,
+                "Width": 87,
+                "Height": 24,
+                "TextId": "Field_VmaxM2",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_13",
+                "X": 604,
+                "Y": 173,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_14",
+                "X": 382,
+                "Y": 210,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_14",
+                "X": 394,
+                "Y": 215,
+                "Width": 87,
+                "Height": 24,
+                "TextId": "Field_VmaxM3",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_14",
+                "X": 604,
+                "Y": 215,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "battery_box_15",
+                "X": 382,
+                "Y": 252,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_label_15",
+                "X": 394,
+                "Y": 257,
+                "Width": 87,
+                "Height": 24,
+                "TextId": "Field_VmaxM4",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "battery_value_15",
+                "X": 604,
+                "Y": 257,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "page_thermal",
+            "X": 30,
+            "Y": 84,
+            "Width": 740,
+            "Height": 340,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "thermal_box_1",
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_label_1",
+                "X": 12,
+                "Y": 5,
+                "Width": 75,
+                "Height": 24,
+                "TextId": "Field_TMotor",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_value_1",
+                "X": 222,
+                "Y": 5,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "thermal_box_2",
+                "Y": 42,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_label_2",
+                "X": 12,
+                "Y": 47,
+                "Width": 66,
+                "Height": 24,
+                "TextId": "Field_TIgbt",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_value_2",
+                "X": 222,
+                "Y": 47,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "thermal_box_3",
+                "Y": 84,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_label_3",
+                "X": 12,
+                "Y": 89,
+                "Width": 43,
+                "Height": 24,
+                "TextId": "Field_TAir",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_value_3",
+                "X": 222,
+                "Y": 89,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "thermal_box_4",
+                "Y": 126,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_label_4",
+                "X": 12,
+                "Y": 131,
+                "Width": 64,
+                "Height": 24,
+                "TextId": "Field_TDcdc",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_value_4",
+                "X": 222,
+                "Y": 131,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "thermal_box_5",
+                "Y": 168,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_label_5",
+                "X": 12,
+                "Y": 173,
+                "Width": 86,
+                "Height": 24,
+                "TextId": "Field_TmaxM0",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_value_5",
+                "X": 222,
+                "Y": 173,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "thermal_box_6",
+                "Y": 210,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_label_6",
+                "X": 12,
+                "Y": 215,
+                "Width": 86,
+                "Height": 24,
+                "TextId": "Field_TmaxM1",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_value_6",
+                "X": 222,
+                "Y": 215,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "thermal_box_7",
+                "Y": 252,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_label_7",
+                "X": 12,
+                "Y": 257,
+                "Width": 86,
+                "Height": 24,
+                "TextId": "Field_TmaxM2",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_value_7",
+                "X": 222,
+                "Y": 257,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "thermal_box_8",
+                "Y": 294,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_label_8",
+                "X": 12,
+                "Y": 299,
+                "Width": 86,
+                "Height": 24,
+                "TextId": "Field_TmaxM3",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_value_8",
+                "X": 222,
+                "Y": 299,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "thermal_box_9",
+                "X": 382,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_label_9",
+                "X": 394,
+                "Y": 5,
+                "Width": 86,
+                "Height": 24,
+                "TextId": "Field_TmaxM4",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_value_9",
+                "X": 604,
+                "Y": 5,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "alerts_popup",
+            "X": 180,
+            "Y": 126,
+            "Width": 440,
+            "Height": 210,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "alerts_popup_shadow",
+                "X": 8,
+                "Y": 8,
+                "Width": 432,
+                "Height": 202,
+                "Alpha": 160
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "alerts_popup_box",
+                "Width": 432,
+                "Height": 202,
+                "Color": {
+                  "Red": 18,
+                  "Green": 18,
+                  "Blue": 18
+                },
+                "BorderColor": {
+                  "Red": 214,
+                  "Green": 54,
+                  "Blue": 56
+                },
+                "BorderSize": 3
+              },
+              {
+                "Type": "TextArea",
+                "Name": "alerts_popup_title",
+                "X": 24,
+                "Y": 16,
+                "Width": 57,
+                "Height": 24,
+                "TextId": "Alerts_Title",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "alerts_popup_text",
+                "X": 24,
+                "Y": 56,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "Alerts_List",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 160
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call Info ChangeToScreenParam"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Param"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "ChangeToScreenParam"
+          }
+        ]
+      },
+      {
+        "Name": "Param",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480
+          },
+          {
+            "Type": "Box",
+            "Name": "param_header_box",
+            "Width": 800,
+            "Height": 56,
+            "Color": {
+              "Red": 22,
+              "Green": 64,
+              "Blue": 36
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "param_title",
+            "X": 24,
+            "Y": 16,
+            "Width": 79,
+            "Height": 24,
+            "TextId": "__SingleUse_D7A2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "X": 18,
+            "Y": 70,
+            "Width": 214,
+            "Height": 372,
+            "Color": {
+              "Red": 28,
+              "Green": 28,
+              "Blue": 28
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "box2_1",
+            "X": 256,
+            "Y": 70,
+            "Width": 526,
+            "Height": 372,
+            "Color": {
+              "Red": 18,
+              "Green": 18,
+              "Blue": 18
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "param_footer_box",
+            "X": -3,
+            "Y": 452,
+            "Width": 328,
+            "Height": 28,
+            "Color": {
+              "Red": 214,
+              "Green": 54,
+              "Blue": 56
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "param_footer_text",
+            "X": 24,
+            "Y": 456,
+            "Width": 222,
+            "Height": 24,
+            "TextId": "__SingleUse_WGT7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "Sd_Footer_Default",
+              "UseBuffer": true,
+              "BufferSize": 32
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 76,
+            "Y": 102,
+            "Width": 90,
+            "Height": 24,
+            "TextId": "__SingleUse_TDOE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_2",
+            "X": 76,
+            "Y": 158,
+            "Width": 79,
+            "Height": 24,
+            "TextId": "__SingleUse_D7A2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 170,
+              "Green": 170,
+              "Blue": 170
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "X": 34,
+            "Y": 100,
+            "Width": 30,
+            "Height": 24,
+            "Filename": "LogoISC.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1_1",
+            "X": 34,
+            "Y": 156,
+            "Width": 30,
+            "Height": 24,
+            "Filename": "LogoISC.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Container",
+            "Name": "avisos_container",
+            "X": 256,
+            "Y": 70,
+            "Width": 526,
+            "Height": 372,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "alert_card_1",
+                "X": 24,
+                "Y": 40,
+                "Width": 470,
+                "Height": 48,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "ScalableImage",
+                "Name": "IndiceTmotor",
+                "X": 34,
+                "Y": 50,
+                "Width": 36,
+                "Height": 29,
+                "Filename": "LogoISC.png",
+                "ScalingAlgorithm": "Nearest-neighbor"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "Temperatura_limite_Motor",
+                "X": 82,
+                "Y": 52,
+                "Width": 169,
+                "Height": 24,
+                "TextId": "__SingleUse_0EPE",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "TLMSET",
+                "X": 411,
+                "Y": 52,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "alert_card_2",
+                "X": 24,
+                "Y": 98,
+                "Width": 470,
+                "Height": 48,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "ScalableImage",
+                "Name": "IndiceTinversor",
+                "X": 34,
+                "Y": 108,
+                "Width": 36,
+                "Height": 29,
+                "Filename": "LogoISC.png",
+                "ScalingAlgorithm": "Nearest-neighbor"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "Temperatura_limite_Inversor",
+                "X": 82,
+                "Y": 110,
+                "Width": 187,
+                "Height": 24,
+                "TextId": "__SingleUse_JCCK",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "TLISET",
+                "X": 411,
+                "Y": 110,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_84GQ",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_IK47",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "alert_card_3",
+                "X": 24,
+                "Y": 156,
+                "Width": 470,
+                "Height": 48,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "ScalableImage",
+                "Name": "IndiceTacumulador",
+                "X": 34,
+                "Y": 166,
+                "Width": 36,
+                "Height": 29,
+                "Filename": "LogoISC.png",
+                "ScalingAlgorithm": "Nearest-neighbor"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "Temperatura_limite_Acumulador",
+                "X": 82,
+                "Y": 168,
+                "Width": 161,
+                "Height": 24,
+                "TextId": "__SingleUse_GD6U",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "TLASET",
+                "X": 411,
+                "Y": 168,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_AS6X",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_IAES",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "alert_card_4",
+                "X": 24,
+                "Y": 214,
+                "Width": 470,
+                "Height": 48,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "ScalableImage",
+                "Name": "IndiceSOC",
+                "X": 34,
+                "Y": 224,
+                "Width": 36,
+                "Height": 29,
+                "Filename": "LogoISC.png",
+                "ScalingAlgorithm": "Nearest-neighbor"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "Estado_de_carga",
+                "X": 82,
+                "Y": 226,
+                "Width": 148,
+                "Height": 24,
+                "TextId": "__SingleUse_LIOU",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "SOCSET",
+                "X": 411,
+                "Y": 226,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_QRMJ",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_X8H3",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "alert_card_5",
+                "X": 24,
+                "Y": 272,
+                "Width": 470,
+                "Height": 48,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 242,
+                  "Green": 206,
+                  "Blue": 27
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "ScalableImage",
+                "Name": "IndiceVminAcumulador",
+                "X": 34,
+                "Y": 282,
+                "Width": 36,
+                "Height": 29,
+                "Filename": "LogoISC.png",
+                "ScalingAlgorithm": "Nearest-neighbor"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "Tension_minima_Acumulador",
+                "X": 82,
+                "Y": 284,
+                "Width": 165,
+                "Height": 24,
+                "TextId": "__SingleUse_FUXO",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "VASET",
+                "X": 411,
+                "Y": 282,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_S2J6",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_Q1LL",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "Configuracion_container",
+            "X": 256,
+            "Y": 70,
+            "Width": 526,
+            "Height": 372,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "config_card_1",
+                "X": 24,
+                "Y": 104,
+                "Width": 470,
+                "Height": 53,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 45,
+                  "Green": 190,
+                  "Blue": 95
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "ScalableImage",
+                "Name": "IndiceTinversor_1",
+                "X": 34,
+                "Y": 122,
+                "Width": 36,
+                "Height": 29,
+                "Filename": "LogoISC.png",
+                "ScalingAlgorithm": "Nearest-neighbor"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "Temperatura_limite_Inversor_1",
+                "X": 82,
+                "Y": 124,
+                "Width": 105,
+                "Height": 24,
+                "TextId": "__SingleUse_NUO9",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "Temperatura_limite_Inversor_1_1",
+                "X": 370,
+                "Y": 124,
+                "Width": 64,
+                "Height": 24,
+                "TextId": "Param_Start",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "config_card_2",
+                "X": 24,
+                "Y": 176,
+                "Width": 470,
+                "Height": 53,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 45,
+                  "Green": 190,
+                  "Blue": 95
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "ScalableImage",
+                "Name": "IndiceNewLog",
+                "X": 34,
+                "Y": 194,
+                "Width": 36,
+                "Height": 29,
+                "Filename": "LogoISC.png",
+                "ScalingAlgorithm": "Nearest-neighbor"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "ParamNewLogLabel",
+                "X": 82,
+                "Y": 196,
+                "Width": 96,
+                "Height": 24,
+                "TextId": "Param_NewLog",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "ParamSessionLabel",
+                "X": 82,
+                "Y": 268,
+                "Width": 76,
+                "Height": 24,
+                "Visible": false,
+                "TextId": "Param_Session",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "ParamSessionValue",
+                "X": 280,
+                "Y": 268,
+                "Width": 11,
+                "Height": 24,
+                "Visible": false,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 16
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call Param ChangeToScreenInfo"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Info"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "ChangeToScreenInfo"
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Arranque",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32H7",
+    "SubFamily": "STM32H743/753",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../TFG.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": []
+  },
+  "Version": "4.25.0"
+}

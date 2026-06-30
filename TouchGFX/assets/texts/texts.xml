@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.25.0">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1">
+      <Text Id="ResourceId1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">New Text</Translation>
+      </Text>
+      <Text Id="Telemetry_Title" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Telemetry</Translation>
+      </Text>
+      <Text Id="Telemetry_Home" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Home</Translation>
+      </Text>
+      <Text Id="Telemetry_Drive" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Drive</Translation>
+      </Text>
+      <Text Id="Telemetry_Battery" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Battery</Translation>
+      </Text>
+      <Text Id="Telemetry_Thermal" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Thermal</Translation>
+      </Text>
+      <Text Id="Sd_Footer_Default" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">SD NOLOG - NEW LOG</Translation>
+      </Text>
+      <Text Id="Alerts_Title" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Alerts</Translation>
+      </Text>
+      <Text Id="Alerts_List" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="Alerts_Indicator" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">ALARM</Translation>
+      </Text>
+      <Text Id="Param_NewLog" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">NEW LOG</Translation>
+      </Text>
+      <Text Id="Param_Start" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">START</Translation>
+      </Text>
+      <Text Id="Param_Finish" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">FINISH</Translation>
+      </Text>
+      <Text Id="Param_Session" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Session</Translation>
+      </Text>
+      <Text Id="Home_EcuState" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">ECU State</Translation>
+      </Text>
+      <Text Id="Home_AmsState" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">AMS State</Translation>
+      </Text>
+      <Text Id="Home_Soc" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">SOC</Translation>
+      </Text>
+      <Text Id="Home_DcBus" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">DC Bus</Translation>
+      </Text>
+      <Text Id="Home_InvState" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Inv State</Translation>
+      </Text>
+      <Text Id="Home_Precharge" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Precharge</Translation>
+      </Text>
+      <Text Id="Drive_Accel1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Accel 1</Translation>
+      </Text>
+      <Text Id="Drive_Brake" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Brake</Translation>
+      </Text>
+      <Text Id="Drive_Torque" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Torque</Translation>
+      </Text>
+      <Text Id="Drive_Rpm" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Inv RPM</Translation>
+      </Text>
+      <Text Id="Drive_Speed" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Speed</Translation>
+      </Text>
+      <Text Id="Drive_Current" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Current</Translation>
+      </Text>
+      <Text Id="Battery_VCellMin" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Min cell V</Translation>
+      </Text>
+      <Text Id="Battery_IAccu" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">I accu</Translation>
+      </Text>
+      <Text Id="Battery_IDcdc" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">I dcdc</Translation>
+      </Text>
+      <Text Id="Battery_VBus" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">V bus</Translation>
+      </Text>
+      <Text Id="Battery_VminMods" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Min module V</Translation>
+      </Text>
+      <Text Id="Battery_VmaxMods" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Max module V</Translation>
+      </Text>
+      <Text Id="Thermal_TMotor" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T motor</Translation>
+      </Text>
+      <Text Id="Thermal_TIgbt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T IGBT</Translation>
+      </Text>
+      <Text Id="Thermal_TAir" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T air</Translation>
+      </Text>
+      <Text Id="Thermal_TDcdc" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T dcdc</Translation>
+      </Text>
+      <Text Id="Thermal_TMaxMods" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Max module T</Translation>
+      </Text>
+      <Text Id="Field_EcuFsm" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">ECU FSM</Translation>
+      </Text>
+      <Text Id="Field_StartBtn" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Start btn</Translation>
+      </Text>
+      <Text Id="Field_AmsState" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">AMS state</Translation>
+      </Text>
+      <Text Id="Field_Precharge" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Precharge</Translation>
+      </Text>
+      <Text Id="Field_InvState" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Inv state</Translation>
+      </Text>
+      <Text Id="Field_VdcReady" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">VDC ready</Translation>
+      </Text>
+      <Text Id="Field_InvError" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Inv error</Translation>
+      </Text>
+      <Text Id="Field_Sequence" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Sequence</Translation>
+      </Text>
+      <Text Id="Field_Soc" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">SOC</Translation>
+      </Text>
+      <Text Id="Field_DcBus" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">DC bus</Translation>
+      </Text>
+      <Text Id="Field_GpsFix" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">GPS fix</Translation>
+      </Text>
+      <Text Id="Field_GpsSats" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">GPS sats</Translation>
+      </Text>
+      <Text Id="Field_GpsHdop" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">GPS hdop</Translation>
+      </Text>
+      <Text Id="Field_TickMs" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Tick ms</Translation>
+      </Text>
+      <Text Id="Field_GpsLat" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">GPS lat</Translation>
+      </Text>
+      <Text Id="Field_GpsLon" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">GPS lon</Translation>
+      </Text>
+      <Text Id="Field_Accel1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Accel</Translation>
+      </Text>
+      <Text Id="Field_Accel2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Accel 2</Translation>
+      </Text>
+      <Text Id="Field_Brake" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Brake</Translation>
+      </Text>
+      <Text Id="Field_Torque" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Torque</Translation>
+      </Text>
+      <Text Id="Field_FlagEv23" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Flag EV23</Translation>
+      </Text>
+      <Text Id="Field_FlagT1189" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Flag T1189</Translation>
+      </Text>
+      <Text Id="Field_InvRpm" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Inv RPM</Translation>
+      </Text>
+      <Text Id="Field_InvSpeed" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Inv speed</Translation>
+      </Text>
+      <Text Id="Field_InvCurrent" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Inv current</Translation>
+      </Text>
+      <Text Id="Field_GpsSpeed" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Speed</Translation>
+      </Text>
+      <Text Id="Field_GpsCourse" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">GPS course</Translation>
+      </Text>
+      <Text Id="Field_GpsAlt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">GPS alt</Translation>
+      </Text>
+      <Text Id="Field_VCellMin" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Min cell V</Translation>
+      </Text>
+      <Text Id="Field_IAccu" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">I accu</Translation>
+      </Text>
+      <Text Id="Field_IDcdc" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">I dcdc</Translation>
+      </Text>
+      <Text Id="Field_VBus" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">V bus</Translation>
+      </Text>
+      <Text Id="Field_VminM0" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Vmin M0</Translation>
+      </Text>
+      <Text Id="Field_VminM1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Vmin M1</Translation>
+      </Text>
+      <Text Id="Field_VminM2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Vmin M2</Translation>
+      </Text>
+      <Text Id="Field_VminM3" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Vmin M3</Translation>
+      </Text>
+      <Text Id="Field_VminM4" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Vmin M4</Translation>
+      </Text>
+      <Text Id="Field_VmaxM0" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Vmax M0</Translation>
+      </Text>
+      <Text Id="Field_VmaxM1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Vmax M1</Translation>
+      </Text>
+      <Text Id="Field_VmaxM2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Vmax M2</Translation>
+      </Text>
+      <Text Id="Field_VmaxM3" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Vmax M3</Translation>
+      </Text>
+      <Text Id="Field_VmaxM4" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Vmax M4</Translation>
+      </Text>
+      <Text Id="Field_TMotor" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T motor</Translation>
+      </Text>
+      <Text Id="Field_TIgbt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T IGBT</Translation>
+      </Text>
+      <Text Id="Field_TAir" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T air</Translation>
+      </Text>
+      <Text Id="Field_TDcdc" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T dcdc</Translation>
+      </Text>
+      <Text Id="Field_TmaxM0" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Tmax M0</Translation>
+      </Text>
+      <Text Id="Field_TmaxM1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Tmax M1</Translation>
+      </Text>
+      <Text Id="Field_TmaxM2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Tmax M2</Translation>
+      </Text>
+      <Text Id="Field_TmaxM3" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Tmax M3</Translation>
+      </Text>
+      <Text Id="Field_TmaxM4" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Tmax M4</Translation>
+      </Text>
+    </TextGroup>
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_NTCN" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Light</Translation>
+      </Text>
+      <Text Id="__SingleUse_68T0" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">FINISH</Translation>
+      </Text>
+      <Text Id="__SingleUse_Q1LL" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_X8H3" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_IAES" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_IK47" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_FIM7" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_S2J6" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_QRMJ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_AS6X" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_84GQ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_WGT7" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_KOHW" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Display Mode</Translation>
+      </Text>
+      <Text Id="__SingleUse_NUO9" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">SD logging</Translation>
+      </Text>
+      <Text Id="__SingleUse_4CFG" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">START</Translation>
+      </Text>
+      <Text Id="__SingleUse_5CFG" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Dark</Translation>
+      </Text>
+      <Text Id="__SingleUse_FUXO" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Min Accu Voltage</Translation>
+      </Text>
+      <Text Id="__SingleUse_LIOU" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">State of Charge</Translation>
+      </Text>
+      <Text Id="__SingleUse_GD6U" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Accu Temp Limit</Translation>
+      </Text>
+      <Text Id="__SingleUse_JCCK" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Inverter Temp Limit</Translation>
+      </Text>
+      <Text Id="__SingleUse_0EPE" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Motor Temp Limit</Translation>
+      </Text>
+      <Text Id="__SingleUse_D7A2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Settings</Translation>
+      </Text>
+      <Text Id="__SingleUse_TDOE" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Warnings</Translation>
+      </Text>
+      <Text Id="__SingleUse_HN88" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_NTUR" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_13VG" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_SZMZ" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_G16A" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_CMJR" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_YOR3" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_6T6M" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_VPFG" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T.Brake.RL</Translation>
+      </Text>
+      <Text Id="__SingleUse_W24P" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T.Brake.FL</Translation>
+      </Text>
+      <Text Id="__SingleUse_12IF" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T.Brake.RR</Translation>
+      </Text>
+      <Text Id="__SingleUse_TCZI" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T.Brake.FR</Translation>
+      </Text>
+      <Text Id="__SingleUse_0GZE" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">ISC Racing Team&#10;JB Mata</Translation>
+      </Text>
+      <Text Id="__SingleUse_6JXI" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T.Motor</Translation>
+      </Text>
+      <Text Id="__SingleUse_XW43" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T.Accu</Translation>
+      </Text>
+      <Text Id="__SingleUse_DTUM" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T.Inv</Translation>
+      </Text>
+      <Text Id="__SingleUse_E9NE" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">SoC</Translation>
+      </Text>
+      <Text Id="__SingleUse_4L7V" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Brake</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZYIA" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Inv State</Translation>
+      </Text>
+      <Text Id="__SingleUse_C4I6" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Vmin&#10;</Translation>
+      </Text>
+      <Text Id="__SingleUse_RDLG" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">DC Bus</Translation>
+      </Text>
+      <Text Id="__SingleUse_LWQK" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Accel</Translation>
+      </Text>
+      <Text Id="__SingleUse_JD9J" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_11LI" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_7S8O" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_YL2C" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_APE2" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_7XAR" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_MQRT" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_9W03" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_B8XZ" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_V213" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_VYZS" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_EBH3" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_VSJQ" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_7SU2" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_XUSH" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_D0L5" Alignment="Center" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="arialbd.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters=" 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.-_%" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography_00" Font="arialbd.ttf" Size="90" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789-%" />
+    <Typography Id="Typography_01" Font="arialbd.ttf" Size="60" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789-%" />
+  </Typographies>
+</TextDatabase>

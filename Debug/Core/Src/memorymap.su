@@ -1,0 +1,16 @@
+../Core/Src/memorymap.c:53:16:Debug_IsCriticalMessage	16	static
+../Core/Src/memorymap.c:65:16:Debug_IsAllowedRuntimeMessage	16	static
+../Core/Src/memorymap.c:86:13:LTDC_FillBufferColor	32	static
+../Core/Src/memorymap.c:100:6:Debug_SetStage	16	static
+../Core/Src/memorymap.c:107:6:Debug_SetRuntimeLogsEnabled	16	static
+../Core/Src/memorymap.c:112:6:Debug_LogUart5	24	static,ignoring_inline_asm
+../Core/Src/memorymap.c:145:6:Debug_SpinDelay	16	static,ignoring_inline_asm
+../Core/Src/memorymap.c:153:6:Panel_ClearFramebuffers	32	static,ignoring_inline_asm
+../Core/Src/memorymap.c:164:6:Panel_ExitStandby	8	static
+../Core/Src/memorymap.c:171:6:DisplayDiag_OnLtdcFifoUnderrun	192	static
+../Core/Src/memorymap.c:194:6:DisplayDiag_LogRuntime	480	static
+../Core/Src/memorymap.c:261:6:DisplayDiag_OnVSync	4	static
+../Core/Src/memorymap.c:266:6:DisplayDiag_OnSwap	4	static
+../Core/Src/memorymap.c:271:6:DisplayDiag_OnFrontPorch	4	static
+../Core/Src/memorymap.c:276:6:DisplayDiag_OnUiTick	4	static
+../Core/Src/memorymap.c:281:6:DisplayDiag_OnUiTelemetryPush	4	static

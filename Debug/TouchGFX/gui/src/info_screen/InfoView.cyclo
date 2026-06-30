@@ -1,0 +1,34 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:91:5:touchgfx::colortype::colortype(uint32_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:515:10:void touchgfx::Drawable::setVisible(bool)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:62:10:void touchgfx::Box::setColor(touchgfx::colortype)	1
+../TouchGFX/gui/include/gui/info_screen/InfoView.hpp:12:13:InfoView::~InfoView()	1
+../TouchGFX/gui/include/gui/info_screen/InfoView.hpp:12:13:virtual InfoView::~InfoView()	1
+../TouchGFX/gui/src/info_screen/InfoView.cpp:21:6:bool {anonymous}::isNoLogSession(const char*)	7
+../TouchGFX/gui/src/info_screen/InfoView.cpp:27:6:void {anonymous}::setAsciiText(touchgfx::Unicode::UnicodeChar*, uint16_t, const char*, const char*)	6
+../TouchGFX/gui/src/info_screen/InfoView.cpp:47:1:InfoView::InfoView()	1
+../TouchGFX/gui/src/info_screen/InfoView.cpp:60:6:virtual void InfoView::setupScreen()	1
+../TouchGFX/gui/src/info_screen/InfoView.cpp:69:6:virtual void InfoView::handleTickEvent()	1
+../TouchGFX/gui/src/info_screen/InfoView.cpp:73:6:virtual void InfoView::tearDownScreen()	1
+../TouchGFX/gui/src/info_screen/InfoView.cpp:78:6:void InfoView::setTelemetry(const UiTelemetry&)	3
+../TouchGFX/gui/src/info_screen/InfoView.cpp:95:6:void InfoView::setAlertThresholds(const uint16_t*)	3
+../TouchGFX/gui/src/info_screen/InfoView.cpp:109:6:void InfoView::setSdLoggingStatus(bool, const char*)	6
+../TouchGFX/gui/src/info_screen/InfoView.cpp:126:6:void InfoView::nextPage()	1
+../TouchGFX/gui/src/info_screen/InfoView.cpp:132:6:void InfoView::previousPage()	2
+../TouchGFX/gui/src/info_screen/InfoView.cpp:138:6:void InfoView::setPage(uint8_t)	1
+../TouchGFX/gui/src/info_screen/InfoView.cpp:144:9:uint8_t InfoView::getPage() const	1
+../TouchGFX/gui/src/info_screen/InfoView.cpp:149:6:void InfoView::dismissAlertsPopup()	3
+../TouchGFX/gui/src/info_screen/InfoView.cpp:174:6:void InfoView::updatePageVisibility()	1
+../TouchGFX/gui/src/info_screen/InfoView.cpp:189:6:void InfoView::updateTabStyles()	5
+../TouchGFX/gui/src/info_screen/InfoView.cpp:202:6:void InfoView::setValueU32(touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::TextAreaWithOneWildcard&, uint32_t)	2
+../TouchGFX/gui/src/info_screen/InfoView.cpp:210:6:void InfoView::setValueS32(touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::TextAreaWithOneWildcard&, int32_t)	2
+../TouchGFX/gui/src/info_screen/InfoView.cpp:218:6:void InfoView::setValueU16(touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::TextAreaWithOneWildcard&, uint16_t)	2
+../TouchGFX/gui/src/info_screen/InfoView.cpp:226:6:void InfoView::setValueS16(touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::TextAreaWithOneWildcard&, int16_t)	2
+../TouchGFX/gui/src/info_screen/InfoView.cpp:234:6:void InfoView::setValueU8(touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::TextAreaWithOneWildcard&, uint8_t)	2
+../TouchGFX/gui/src/info_screen/InfoView.cpp:242:6:void InfoView::updateTelemetryRows()	1
+../TouchGFX/gui/src/info_screen/InfoView.cpp:294:19:InfoView::updateAlertsPopup()::<lambda(uint8_t, const char*)>	5
+../TouchGFX/gui/src/info_screen/InfoView.cpp:289:6:void InfoView::updateAlertsPopup()	13
+../TouchGFX/gui/src/info_screen/InfoView.cpp:350:1:void __static_initialization_and_destruction_0()	1
+../TouchGFX/gui/src/info_screen/InfoView.cpp:350:1:cpp)	1

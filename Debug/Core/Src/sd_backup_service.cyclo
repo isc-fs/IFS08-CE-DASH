@@ -1,0 +1,11 @@
+../Core/Src/sd_backup_service.c:35:6:SdBackupService_Init	7
+../Core/Src/sd_backup_service.c:72:9:SdBackupService_IsInitialized	3
+../Core/Src/sd_backup_service.c:77:9:SdBackupService_IsWorkerRunning	1
+../Core/Src/sd_backup_service.c:82:23:SdBackupService_RequestSave	11
+../Core/Src/sd_backup_service.c:142:23:SdBackupService_RequestDelete	7
+../Core/Src/sd_backup_service.c:189:6:SdBackupService_GetStats	3
+../Core/Src/sd_backup_service.c:212:6:SdBackupService_LogStatus	1
+../Core/Src/sd_backup_service.c:236:13:SdBackupService_StatusString	8
+../Core/Src/sd_backup_service.c:259:30:SdBackupService_CopyName	7
+../Core/Src/sd_backup_service.c:278:13:SdBackupService_Task	6
+../Core/Src/sd_backup_service.c:333:13:SdBackupService_LogFailure	4

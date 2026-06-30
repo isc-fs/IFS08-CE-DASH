@@ -1,0 +1,13 @@
+../Core/Src/sd_backup.c:22:17:SdBackup_Checksum	2
+../Core/Src/sd_backup.c:36:13:SdBackup_EnsureFatFsLinked	4
+../Core/Src/sd_backup.c:54:23:SdBackup_BuildPath	8
+../Core/Src/sd_backup.c:79:23:SdBackup_BuildTempPath	8
+../Core/Src/sd_backup.c:104:23:SdBackup_EnsureRootDirectory	8
+../Core/Src/sd_backup.c:143:9:SdBackup_IsReady	2
+../Core/Src/sd_backup.c:148:16:SdBackup_Mount	5
+../Core/Src/sd_backup.c:179:6:SdBackup_Unmount	2
+../Core/Src/sd_backup.c:191:16:SdBackup_GetInfo	5
+../Core/Src/sd_backup.c:221:16:SdBackup_SaveBlob	17
+../Core/Src/sd_backup.c:310:16:SdBackup_LoadBlob	21
+../Core/Src/sd_backup.c:401:16:SdBackup_DeleteBlob	7
+../Core/Src/sd_backup.c:437:13:SdBackup_StatusString	12
