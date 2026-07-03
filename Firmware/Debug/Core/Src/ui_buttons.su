@@ -1,4 +1,0 @@
-../Core/Src/ui_buttons.c:27:16:UIButtons_ReadRaw	24	static
-../Core/Src/ui_buttons.c:40:6:UIButtons_TaskInit	16	static
-../Core/Src/ui_buttons.c:53:6:UIButtons_TaskPoll	16	static
-../Core/Src/ui_buttons.c:85:10:UIButtons_FetchPressedMask	24	static,ignoring_inline_asm

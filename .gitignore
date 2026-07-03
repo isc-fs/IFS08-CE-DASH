@@ -1,0 +1,12 @@
+Debug/
+**/Debug/
+__pycache__/
+*.pyc
+*.log
+*.bak
+*.md
+*.pdf
+*.docx
+*.pptx
+*.xlsx
+fp-info-cache

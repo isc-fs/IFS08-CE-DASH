@@ -1,2 +1,0 @@
-../FATFS/App/fatfs_unicode.c:4:7:ff_convert	16	static
-../FATFS/App/fatfs_unicode.c:10:7:ff_wtoupper	16	static
