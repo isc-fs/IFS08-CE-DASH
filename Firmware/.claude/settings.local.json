@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex > build_log31.txt 2>&1; echo \"EXIT:$?\"; grep -a \"undefined\" main.log | head -5; rm -f build_log2*.txt build_log3*.txt)",
+      "Bash(rm -f build_log2*.txt build_log3*.txt 2>/dev/null; ls *.txt 2>/dev/null)",
+      "Bash(rm -f main.aux Chapter3/chapter3.aux Chapter4/chapter4.aux)",
+      "Bash(latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex)",
+      "Bash(rm -f main.out main.bcf-SAVE-ERROR main.bbl-SAVE-ERROR Chapter3/chapter3.aux Chapter4/chapter4.aux 2>&1 *)",
+      "Bash(rm -f main.aux 2>&1; echo \"result: $?\")",
+      "Bash(rm -f main.out main.aux main.bcf-SAVE-ERROR main.bbl-SAVE-ERROR Chapter1/chapter1.aux Chapter2/chapter2.aux Chapter3/chapter3.aux Chapter4/chapter4.aux 2>&1 *)",
+      "Bash(rm -f main.out main.aux Chapter3/chapter3.aux Chapter4/chapter4.aux)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\info\\OneDrive\\Escritorio\\Pantalla\\Stm32Display\\Firmware\\Memoria",
+      "C:\\Users\\info\\OneDrive\\Escritorio\\Pantalla\\Stm32Display\\Firmware\\Memoria\\Chapter3"
+    ]
+  }
+}
