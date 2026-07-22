@@ -25,7 +25,7 @@ public:
 protected:
     enum
     {
-        PAGE_COUNT = 4
+        PAGE_COUNT = 5
     };
 
     UiTelemetry currentTelemetry;
@@ -45,6 +45,8 @@ protected:
     void setValueU16(touchgfx::Unicode::UnicodeChar* buffer, uint16_t bufferSize, touchgfx::TextAreaWithOneWildcard& textArea, uint16_t value);
     void setValueS16(touchgfx::Unicode::UnicodeChar* buffer, uint16_t bufferSize, touchgfx::TextAreaWithOneWildcard& textArea, int16_t value);
     void setValueU8(touchgfx::Unicode::UnicodeChar* buffer, uint16_t bufferSize, touchgfx::TextAreaWithOneWildcard& textArea, uint8_t value);
+    void setPairU32(touchgfx::Unicode::UnicodeChar* buffer, uint16_t bufferSize, touchgfx::TextAreaWithOneWildcard& textArea, uint32_t first, uint32_t second);
+    void setPairS32(touchgfx::Unicode::UnicodeChar* buffer, uint16_t bufferSize, touchgfx::TextAreaWithOneWildcard& textArea, int32_t first, int32_t second);
     void updateTelemetryRows();
     void updateAlertsPopup();
 };

@@ -47,6 +47,27 @@ typedef struct
   int32_t inverter_inv_rpm;
   int32_t inverter_inv_speed_actual;
   int32_t inverter_inv_current_actual;
+  int16_t inverter_inv_current_d_raw;
+  int16_t inverter_inv_current_q_raw;
+  uint16_t inverter_inv_volt_modulus_permil;
+  uint16_t inverter_inv_motor2_temp_raw;
+  uint16_t inverter_inv_dem_code;
+  uint8_t inverter_inv_dem_present;
+  uint16_t inverter_inv_pwrstg_bit_state;
+  uint8_t inverter_inv_foc_bit_state;
+  uint32_t inverter_inv_uptime_ms;
+  uint8_t inverter_inv_core0_load_pct;
+  uint8_t inverter_inv_core1_load_pct;
+  uint16_t inverter_inv_kl30_mV;
+  uint8_t inverter_inv_cmd_src;
+  uint8_t inverter_inv_ctrl_type;
+  uint8_t inverter_inv_ctrl_mode;
+  uint8_t inverter_inv_pos_fb_src;
+  int32_t inverter_inv_ac_bus_power_W;
+  int16_t inverter_inv_torque_max_feas_Ndm;
+  int16_t inverter_inv_torque_est_Nm;
+  int16_t inverter_inv_setpoint_d_raw;
+  int16_t inverter_inv_setpoint_q_raw;
 
   /* GPS */
   uint16_t gps_speed;

@@ -7,6 +7,7 @@ constexpr uint8_t pageHome = 0U;
 constexpr uint8_t pageDrive = 1U;
 constexpr uint8_t pageBattery = 2U;
 constexpr uint8_t pageThermal = 3U;
+constexpr uint8_t pageInverter = 4U;
 constexpr uint8_t alertMotorTemp = 1U << 0;
 constexpr uint8_t alertInverterTemp = 1U << 1;
 constexpr uint8_t alertAccuTemp = 1U << 2;
@@ -177,11 +178,13 @@ void InfoView::updatePageVisibility()
     page_drive.setVisible(currentPage == pageDrive);
     page_battery.setVisible(currentPage == pageBattery);
     page_thermal.setVisible(currentPage == pageThermal);
+    page_inverter.setVisible(currentPage == pageInverter);
 
     page_home.invalidate();
     page_drive.invalidate();
     page_battery.invalidate();
     page_thermal.invalidate();
+    page_inverter.invalidate();
 
     updateTabStyles();
 }
@@ -192,11 +195,13 @@ void InfoView::updateTabStyles()
     tab_drive.setColor((currentPage == pageDrive) ? colorWhite : colorMuted);
     tab_battery.setColor((currentPage == pageBattery) ? colorWhite : colorMuted);
     tab_thermal.setColor((currentPage == pageThermal) ? colorWhite : colorMuted);
+    tab_inverter.setColor((currentPage == pageInverter) ? colorWhite : colorMuted);
 
     tab_home.invalidate();
     tab_drive.invalidate();
     tab_battery.invalidate();
     tab_thermal.invalidate();
+    tab_inverter.invalidate();
 }
 
 void InfoView::setValueU32(touchgfx::Unicode::UnicodeChar* buffer, uint16_t bufferSize, touchgfx::TextAreaWithOneWildcard& textArea, uint32_t value)
@@ -239,6 +244,24 @@ void InfoView::setValueU8(touchgfx::Unicode::UnicodeChar* buffer, uint16_t buffe
     textArea.invalidate();
 }
 
+void InfoView::setPairU32(touchgfx::Unicode::UnicodeChar* buffer, uint16_t bufferSize, touchgfx::TextAreaWithOneWildcard& textArea, uint32_t first, uint32_t second)
+{
+    textArea.invalidate();
+    touchgfx::Unicode::snprintf(buffer, bufferSize, hasTelemetry ? "%u / %u" : "",
+                               static_cast<unsigned>(first), static_cast<unsigned>(second));
+    textArea.resizeToCurrentText();
+    textArea.invalidate();
+}
+
+void InfoView::setPairS32(touchgfx::Unicode::UnicodeChar* buffer, uint16_t bufferSize, touchgfx::TextAreaWithOneWildcard& textArea, int32_t first, int32_t second)
+{
+    textArea.invalidate();
+    touchgfx::Unicode::snprintf(buffer, bufferSize, hasTelemetry ? "%d / %d" : "",
+                               static_cast<int>(first), static_cast<int>(second));
+    textArea.resizeToCurrentText();
+    textArea.invalidate();
+}
+
 void InfoView::updateTelemetryRows()
 {
     setValueU8(home_value_1Buffer, HOME_VALUE_1_SIZE, home_value_1, currentTelemetry.ecuFsmState);
@@ -250,6 +273,8 @@ void InfoView::updateTelemetryRows()
     setValueU16(home_value_7Buffer, HOME_VALUE_7_SIZE, home_value_7, currentTelemetry.inverterInvDcBusVoltage);
     setValueU16(home_value_8Buffer, HOME_VALUE_8_SIZE, home_value_8, currentTelemetry.ecuAceleracion);
     setValueU16(home_value_9Buffer, HOME_VALUE_9_SIZE, home_value_9, currentTelemetry.ecuSFreno);
+    setValueU16(home_value_10Buffer, HOME_VALUE_10_SIZE, home_value_10, currentTelemetry.inverterInvDemCode);
+    setValueU8(home_value_11Buffer, HOME_VALUE_11_SIZE, home_value_11, currentTelemetry.inverterInvDemPresent);
 
     setValueS32(drive_value_1Buffer, DRIVE_VALUE_1_SIZE, drive_value_1, currentTelemetry.inverterInvSpeedActual);
     setValueS32(drive_value_2Buffer, DRIVE_VALUE_2_SIZE, drive_value_2, filteredDriveRpm);
@@ -284,6 +309,26 @@ void InfoView::updateTelemetryRows()
     setValueS16(thermal_value_7Buffer, THERMAL_VALUE_7_SIZE, thermal_value_7, currentTelemetry.amsTempMaxModulo[2]);
     setValueS16(thermal_value_8Buffer, THERMAL_VALUE_8_SIZE, thermal_value_8, currentTelemetry.amsTempMaxModulo[3]);
     setValueS16(thermal_value_9Buffer, THERMAL_VALUE_9_SIZE, thermal_value_9, currentTelemetry.amsTempMaxModulo[4]);
+    setValueS16(thermal_value_10Buffer, THERMAL_VALUE_10_SIZE, thermal_value_10, currentTelemetry.inverterInvMotor2Temp);
+
+    setPairS32(inverter_value_1Buffer, INVERTER_VALUE_1_SIZE, inverter_value_1,
+               currentTelemetry.inverterInvCurrentDRaw, currentTelemetry.inverterInvCurrentQRaw);
+    setPairS32(inverter_value_2Buffer, INVERTER_VALUE_2_SIZE, inverter_value_2,
+               currentTelemetry.inverterInvVoltModulusPermil, currentTelemetry.inverterInvAcBusPowerW);
+    setPairS32(inverter_value_3Buffer, INVERTER_VALUE_3_SIZE, inverter_value_3,
+               currentTelemetry.inverterInvTorqueMaxFeasNdm, currentTelemetry.inverterInvTorqueEstNm);
+    setPairS32(inverter_value_4Buffer, INVERTER_VALUE_4_SIZE, inverter_value_4,
+               currentTelemetry.inverterInvSetpointDRaw, currentTelemetry.inverterInvSetpointQRaw);
+    setPairU32(inverter_value_5Buffer, INVERTER_VALUE_5_SIZE, inverter_value_5,
+               currentTelemetry.inverterInvPwrstgBitState, currentTelemetry.inverterInvFocBitState);
+    setPairU32(inverter_value_6Buffer, INVERTER_VALUE_6_SIZE, inverter_value_6,
+               currentTelemetry.inverterInvUptimeMs, currentTelemetry.inverterInvKl30Mv);
+    setPairU32(inverter_value_7Buffer, INVERTER_VALUE_7_SIZE, inverter_value_7,
+               currentTelemetry.inverterInvCore0LoadPct, currentTelemetry.inverterInvCore1LoadPct);
+    setPairU32(inverter_value_8Buffer, INVERTER_VALUE_8_SIZE, inverter_value_8,
+               currentTelemetry.inverterInvCmdSrc, currentTelemetry.inverterInvCtrlType);
+    setPairU32(inverter_value_9Buffer, INVERTER_VALUE_9_SIZE, inverter_value_9,
+               currentTelemetry.inverterInvCtrlMode, currentTelemetry.inverterInvPosFbSrc);
 }
 
 void InfoView::updateAlertsPopup()

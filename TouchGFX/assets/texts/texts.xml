@@ -23,6 +23,9 @@
       <Text Id="Telemetry_Thermal" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Thermal</Translation>
       </Text>
+      <Text Id="Telemetry_Inverter" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Inverter</Translation>
+      </Text>
       <Text Id="Sd_Footer_Default" Alignment="Left" TypographyId="Typography_00">
         <Translation Language="GB">SD NOLOG - NEW LOG</Translation>
       </Text>
@@ -137,6 +140,12 @@
       <Text Id="Field_InvError" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Inv error</Translation>
       </Text>
+      <Text Id="Field_DemCode" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">DEM code</Translation>
+      </Text>
+      <Text Id="Field_DemPresent" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">DEM present</Translation>
+      </Text>
       <Text Id="Field_Sequence" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Sequence</Translation>
       </Text>
@@ -244,6 +253,36 @@
       </Text>
       <Text Id="Field_TMotor" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">T motor</Translation>
+      </Text>
+      <Text Id="Field_TMotor2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">T motor 2</Translation>
+      </Text>
+      <Text Id="Field_InvCurrentDQ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Current D / Q</Translation>
+      </Text>
+      <Text Id="Field_InvVoltPower" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Volt mod / AC W</Translation>
+      </Text>
+      <Text Id="Field_InvTorque" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Torque max / est</Translation>
+      </Text>
+      <Text Id="Field_InvSetpointDQ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Setpoint D / Q</Translation>
+      </Text>
+      <Text Id="Field_InvStates" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Power / FOC state</Translation>
+      </Text>
+      <Text Id="Field_InvRuntime" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Uptime / KL30</Translation>
+      </Text>
+      <Text Id="Field_InvCoreLoad" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Core 0 / 1 %</Translation>
+      </Text>
+      <Text Id="Field_InvCmdType" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cmd src / type</Translation>
+      </Text>
+      <Text Id="Field_InvModePos" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Mode / pos src</Translation>
       </Text>
       <Text Id="Field_TIgbt" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">T IGBT</Translation>

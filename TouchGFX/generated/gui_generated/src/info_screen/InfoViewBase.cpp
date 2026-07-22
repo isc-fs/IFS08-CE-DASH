@@ -47,11 +47,17 @@ InfoViewBase::InfoViewBase()
     tab_battery.setTypedText(touchgfx::TypedText(T_TELEMETRY_BATTERY));
     add(tab_battery);
 
-    tab_thermal.setXY(620, 12);
+    tab_thermal.setXY(603, 12);
     tab_thermal.setColor(touchgfx::Color::getColorFromRGB(170, 170, 170));
     tab_thermal.setLinespacing(0);
     tab_thermal.setTypedText(touchgfx::TypedText(T_TELEMETRY_THERMAL));
     add(tab_thermal);
+
+    tab_inverter.setXY(710, 12);
+    tab_inverter.setColor(touchgfx::Color::getColorFromRGB(170, 170, 170));
+    tab_inverter.setLinespacing(0);
+    tab_inverter.setTypedText(touchgfx::TypedText(T_TELEMETRY_INVERTER));
+    add(tab_inverter);
 
     telemetry_footer_text.setXY(24, 456);
     telemetry_footer_text.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -265,9 +271,52 @@ InfoViewBase::InfoViewBase()
     home_value_9.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGT7));
     page_home.add(home_value_9);
 
+    home_box_10.setPosition(382, 42, 340, 32);
+    home_box_10.setColor(touchgfx::Color::getColorFromRGB(12, 12, 12));
+    home_box_10.setBorderColor(touchgfx::Color::getColorFromRGB(70, 227, 149));
+    home_box_10.setBorderSize(2);
+    page_home.add(home_box_10);
+
+    home_label_10.setXY(394, 47);
+    home_label_10.setColor(touchgfx::Color::getColorFromRGB(170, 170, 170));
+    home_label_10.setLinespacing(0);
+    home_label_10.setTypedText(touchgfx::TypedText(T_FIELD_DEMCODE));
+    page_home.add(home_label_10);
+
+    home_value_10.setXY(604, 47);
+    home_value_10.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    home_value_10.setLinespacing(0);
+    Unicode::snprintf(home_value_10Buffer, HOME_VALUE_10_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FIM7).getText());
+    home_value_10.setWildcard(home_value_10Buffer);
+    home_value_10.resizeToCurrentText();
+    home_value_10.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGT7));
+    page_home.add(home_value_10);
+
+    home_box_11.setPosition(382, 84, 340, 32);
+    home_box_11.setColor(touchgfx::Color::getColorFromRGB(12, 12, 12));
+    home_box_11.setBorderColor(touchgfx::Color::getColorFromRGB(70, 227, 149));
+    home_box_11.setBorderSize(2);
+    page_home.add(home_box_11);
+
+    home_label_11.setXY(394, 89);
+    home_label_11.setColor(touchgfx::Color::getColorFromRGB(170, 170, 170));
+    home_label_11.setLinespacing(0);
+    home_label_11.setTypedText(touchgfx::TypedText(T_FIELD_DEMPRESENT));
+    page_home.add(home_label_11);
+
+    home_value_11.setXY(604, 89);
+    home_value_11.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    home_value_11.setLinespacing(0);
+    Unicode::snprintf(home_value_11Buffer, HOME_VALUE_11_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FIM7).getText());
+    home_value_11.setWildcard(home_value_11Buffer);
+    home_value_11.resizeToCurrentText();
+    home_value_11.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGT7));
+    page_home.add(home_value_11);
+
     add(page_home);
 
     page_drive.setPosition(30, 84, 740, 340);
+    page_drive.setVisible(false);
     drive_box_1.setPosition(0, 0, 360, 96);
     drive_box_1.setColor(touchgfx::Color::getColorFromRGB(12, 12, 12));
     drive_box_1.setBorderColor(touchgfx::Color::getColorFromRGB(80, 150, 255));
@@ -737,7 +786,6 @@ InfoViewBase::InfoViewBase()
     add(page_battery);
 
     page_thermal.setPosition(30, 84, 740, 340);
-    page_thermal.setVisible(false);
     thermal_box_1.setPosition(0, 0, 340, 32);
     thermal_box_1.setColor(touchgfx::Color::getColorFromRGB(12, 12, 12));
     thermal_box_1.setBorderColor(touchgfx::Color::getColorFromRGB(240, 22, 207));
@@ -927,7 +975,221 @@ InfoViewBase::InfoViewBase()
     thermal_value_9.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGT7));
     page_thermal.add(thermal_value_9);
 
+    thermal_box_10.setPosition(382, 42, 340, 32);
+    thermal_box_10.setColor(touchgfx::Color::getColorFromRGB(12, 12, 12));
+    thermal_box_10.setBorderColor(touchgfx::Color::getColorFromRGB(240, 22, 207));
+    thermal_box_10.setBorderSize(2);
+    page_thermal.add(thermal_box_10);
+
+    thermal_label_10.setXY(394, 47);
+    thermal_label_10.setColor(touchgfx::Color::getColorFromRGB(170, 170, 170));
+    thermal_label_10.setLinespacing(0);
+    thermal_label_10.setTypedText(touchgfx::TypedText(T_FIELD_TMOTOR2));
+    page_thermal.add(thermal_label_10);
+
+    thermal_value_10.setXY(604, 47);
+    thermal_value_10.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    thermal_value_10.setLinespacing(0);
+    Unicode::snprintf(thermal_value_10Buffer, THERMAL_VALUE_10_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FIM7).getText());
+    thermal_value_10.setWildcard(thermal_value_10Buffer);
+    thermal_value_10.resizeToCurrentText();
+    thermal_value_10.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGT7));
+    page_thermal.add(thermal_value_10);
+
     add(page_thermal);
+
+    page_inverter.setPosition(30, 84, 740, 340);
+    page_inverter.setVisible(false);
+    inverter_box_1.setPosition(0, 0, 340, 32);
+    inverter_box_1.setColor(touchgfx::Color::getColorFromRGB(12, 12, 12));
+    inverter_box_1.setBorderColor(touchgfx::Color::getColorFromRGB(240, 22, 207));
+    inverter_box_1.setBorderSize(2);
+    page_inverter.add(inverter_box_1);
+
+    inverter_label_1.setXY(12, 5);
+    inverter_label_1.setColor(touchgfx::Color::getColorFromRGB(170, 170, 170));
+    inverter_label_1.setLinespacing(0);
+    inverter_label_1.setTypedText(touchgfx::TypedText(T_FIELD_INVCURRENTDQ));
+    page_inverter.add(inverter_label_1);
+
+    inverter_value_1.setXY(180, 5);
+    inverter_value_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    inverter_value_1.setLinespacing(0);
+    Unicode::snprintf(inverter_value_1Buffer, INVERTER_VALUE_1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FIM7).getText());
+    inverter_value_1.setWildcard(inverter_value_1Buffer);
+    inverter_value_1.resizeToCurrentText();
+    inverter_value_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGT7));
+    page_inverter.add(inverter_value_1);
+
+    inverter_box_2.setPosition(0, 42, 340, 32);
+    inverter_box_2.setColor(touchgfx::Color::getColorFromRGB(12, 12, 12));
+    inverter_box_2.setBorderColor(touchgfx::Color::getColorFromRGB(240, 22, 207));
+    inverter_box_2.setBorderSize(2);
+    page_inverter.add(inverter_box_2);
+
+    inverter_label_2.setXY(12, 47);
+    inverter_label_2.setColor(touchgfx::Color::getColorFromRGB(170, 170, 170));
+    inverter_label_2.setLinespacing(0);
+    inverter_label_2.setTypedText(touchgfx::TypedText(T_FIELD_INVVOLTPOWER));
+    page_inverter.add(inverter_label_2);
+
+    inverter_value_2.setXY(180, 47);
+    inverter_value_2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    inverter_value_2.setLinespacing(0);
+    Unicode::snprintf(inverter_value_2Buffer, INVERTER_VALUE_2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FIM7).getText());
+    inverter_value_2.setWildcard(inverter_value_2Buffer);
+    inverter_value_2.resizeToCurrentText();
+    inverter_value_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGT7));
+    page_inverter.add(inverter_value_2);
+
+    inverter_box_3.setPosition(0, 84, 340, 32);
+    inverter_box_3.setColor(touchgfx::Color::getColorFromRGB(12, 12, 12));
+    inverter_box_3.setBorderColor(touchgfx::Color::getColorFromRGB(240, 22, 207));
+    inverter_box_3.setBorderSize(2);
+    page_inverter.add(inverter_box_3);
+
+    inverter_label_3.setXY(12, 89);
+    inverter_label_3.setColor(touchgfx::Color::getColorFromRGB(170, 170, 170));
+    inverter_label_3.setLinespacing(0);
+    inverter_label_3.setTypedText(touchgfx::TypedText(T_FIELD_INVTORQUE));
+    page_inverter.add(inverter_label_3);
+
+    inverter_value_3.setXY(180, 89);
+    inverter_value_3.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    inverter_value_3.setLinespacing(0);
+    Unicode::snprintf(inverter_value_3Buffer, INVERTER_VALUE_3_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FIM7).getText());
+    inverter_value_3.setWildcard(inverter_value_3Buffer);
+    inverter_value_3.resizeToCurrentText();
+    inverter_value_3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGT7));
+    page_inverter.add(inverter_value_3);
+
+    inverter_box_4.setPosition(0, 126, 340, 32);
+    inverter_box_4.setColor(touchgfx::Color::getColorFromRGB(12, 12, 12));
+    inverter_box_4.setBorderColor(touchgfx::Color::getColorFromRGB(240, 22, 207));
+    inverter_box_4.setBorderSize(2);
+    page_inverter.add(inverter_box_4);
+
+    inverter_label_4.setXY(12, 131);
+    inverter_label_4.setColor(touchgfx::Color::getColorFromRGB(170, 170, 170));
+    inverter_label_4.setLinespacing(0);
+    inverter_label_4.setTypedText(touchgfx::TypedText(T_FIELD_INVSETPOINTDQ));
+    page_inverter.add(inverter_label_4);
+
+    inverter_value_4.setXY(180, 131);
+    inverter_value_4.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    inverter_value_4.setLinespacing(0);
+    Unicode::snprintf(inverter_value_4Buffer, INVERTER_VALUE_4_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FIM7).getText());
+    inverter_value_4.setWildcard(inverter_value_4Buffer);
+    inverter_value_4.resizeToCurrentText();
+    inverter_value_4.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGT7));
+    page_inverter.add(inverter_value_4);
+
+    inverter_box_5.setPosition(0, 168, 340, 32);
+    inverter_box_5.setColor(touchgfx::Color::getColorFromRGB(12, 12, 12));
+    inverter_box_5.setBorderColor(touchgfx::Color::getColorFromRGB(240, 22, 207));
+    inverter_box_5.setBorderSize(2);
+    page_inverter.add(inverter_box_5);
+
+    inverter_label_5.setXY(12, 173);
+    inverter_label_5.setColor(touchgfx::Color::getColorFromRGB(170, 170, 170));
+    inverter_label_5.setLinespacing(0);
+    inverter_label_5.setTypedText(touchgfx::TypedText(T_FIELD_INVSTATES));
+    page_inverter.add(inverter_label_5);
+
+    inverter_value_5.setXY(180, 173);
+    inverter_value_5.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    inverter_value_5.setLinespacing(0);
+    Unicode::snprintf(inverter_value_5Buffer, INVERTER_VALUE_5_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FIM7).getText());
+    inverter_value_5.setWildcard(inverter_value_5Buffer);
+    inverter_value_5.resizeToCurrentText();
+    inverter_value_5.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGT7));
+    page_inverter.add(inverter_value_5);
+
+    inverter_box_6.setPosition(382, 0, 340, 32);
+    inverter_box_6.setColor(touchgfx::Color::getColorFromRGB(12, 12, 12));
+    inverter_box_6.setBorderColor(touchgfx::Color::getColorFromRGB(240, 22, 207));
+    inverter_box_6.setBorderSize(2);
+    page_inverter.add(inverter_box_6);
+
+    inverter_label_6.setXY(394, 5);
+    inverter_label_6.setColor(touchgfx::Color::getColorFromRGB(170, 170, 170));
+    inverter_label_6.setLinespacing(0);
+    inverter_label_6.setTypedText(touchgfx::TypedText(T_FIELD_INVRUNTIME));
+    page_inverter.add(inverter_label_6);
+
+    inverter_value_6.setXY(562, 5);
+    inverter_value_6.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    inverter_value_6.setLinespacing(0);
+    Unicode::snprintf(inverter_value_6Buffer, INVERTER_VALUE_6_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FIM7).getText());
+    inverter_value_6.setWildcard(inverter_value_6Buffer);
+    inverter_value_6.resizeToCurrentText();
+    inverter_value_6.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGT7));
+    page_inverter.add(inverter_value_6);
+
+    inverter_box_7.setPosition(382, 42, 340, 32);
+    inverter_box_7.setColor(touchgfx::Color::getColorFromRGB(12, 12, 12));
+    inverter_box_7.setBorderColor(touchgfx::Color::getColorFromRGB(240, 22, 207));
+    inverter_box_7.setBorderSize(2);
+    page_inverter.add(inverter_box_7);
+
+    inverter_label_7.setXY(394, 47);
+    inverter_label_7.setColor(touchgfx::Color::getColorFromRGB(170, 170, 170));
+    inverter_label_7.setLinespacing(0);
+    inverter_label_7.setTypedText(touchgfx::TypedText(T_FIELD_INVCORELOAD));
+    page_inverter.add(inverter_label_7);
+
+    inverter_value_7.setXY(562, 47);
+    inverter_value_7.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    inverter_value_7.setLinespacing(0);
+    Unicode::snprintf(inverter_value_7Buffer, INVERTER_VALUE_7_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FIM7).getText());
+    inverter_value_7.setWildcard(inverter_value_7Buffer);
+    inverter_value_7.resizeToCurrentText();
+    inverter_value_7.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGT7));
+    page_inverter.add(inverter_value_7);
+
+    inverter_box_8.setPosition(382, 84, 340, 32);
+    inverter_box_8.setColor(touchgfx::Color::getColorFromRGB(12, 12, 12));
+    inverter_box_8.setBorderColor(touchgfx::Color::getColorFromRGB(240, 22, 207));
+    inverter_box_8.setBorderSize(2);
+    page_inverter.add(inverter_box_8);
+
+    inverter_label_8.setXY(394, 89);
+    inverter_label_8.setColor(touchgfx::Color::getColorFromRGB(170, 170, 170));
+    inverter_label_8.setLinespacing(0);
+    inverter_label_8.setTypedText(touchgfx::TypedText(T_FIELD_INVCMDTYPE));
+    page_inverter.add(inverter_label_8);
+
+    inverter_value_8.setXY(562, 89);
+    inverter_value_8.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    inverter_value_8.setLinespacing(0);
+    Unicode::snprintf(inverter_value_8Buffer, INVERTER_VALUE_8_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FIM7).getText());
+    inverter_value_8.setWildcard(inverter_value_8Buffer);
+    inverter_value_8.resizeToCurrentText();
+    inverter_value_8.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGT7));
+    page_inverter.add(inverter_value_8);
+
+    inverter_box_9.setPosition(382, 126, 340, 32);
+    inverter_box_9.setColor(touchgfx::Color::getColorFromRGB(12, 12, 12));
+    inverter_box_9.setBorderColor(touchgfx::Color::getColorFromRGB(240, 22, 207));
+    inverter_box_9.setBorderSize(2);
+    page_inverter.add(inverter_box_9);
+
+    inverter_label_9.setXY(394, 131);
+    inverter_label_9.setColor(touchgfx::Color::getColorFromRGB(170, 170, 170));
+    inverter_label_9.setLinespacing(0);
+    inverter_label_9.setTypedText(touchgfx::TypedText(T_FIELD_INVMODEPOS));
+    page_inverter.add(inverter_label_9);
+
+    inverter_value_9.setXY(562, 131);
+    inverter_value_9.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    inverter_value_9.setLinespacing(0);
+    Unicode::snprintf(inverter_value_9Buffer, INVERTER_VALUE_9_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FIM7).getText());
+    inverter_value_9.setWildcard(inverter_value_9Buffer);
+    inverter_value_9.resizeToCurrentText();
+    inverter_value_9.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGT7));
+    page_inverter.add(inverter_value_9);
+
+    add(page_inverter);
 
     alerts_popup.setPosition(180, 126, 440, 210);
     alerts_popup.setVisible(false);

@@ -143,11 +143,27 @@
           {
             "Type": "TextArea",
             "Name": "tab_thermal",
-            "X": 620,
+            "X": 603,
             "Y": 12,
             "Width": 78,
             "Height": 24,
             "TextId": "Telemetry_Thermal",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 170,
+              "Green": 170,
+              "Blue": 170
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tab_inverter",
+            "X": 710,
+            "Y": 12,
+            "Width": 74,
+            "Height": 24,
+            "TextId": "Telemetry_Inverter",
             "TextRotation": "0",
             "Color": {
               "Red": 170,
@@ -709,6 +725,118 @@
                   "TextId": "__SingleUse_FIM7",
                   "UseBuffer": true,
                   "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "home_box_10",
+                "X": 382,
+                "Y": 42,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 70,
+                  "Green": 227,
+                  "Blue": 149
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_label_10",
+                "X": 394,
+                "Y": 47,
+                "Width": 96,
+                "Height": 24,
+                "TextId": "Field_DemCode",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_value_10",
+                "X": 604,
+                "Y": 47,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 12
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "home_box_11",
+                "X": 382,
+                "Y": 84,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 70,
+                  "Green": 227,
+                  "Blue": 149
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_label_11",
+                "X": 394,
+                "Y": 89,
+                "Width": 122,
+                "Height": 24,
+                "TextId": "Field_DemPresent",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "home_value_11",
+                "X": 604,
+                "Y": 89,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 12
                 }
               }
             ]
@@ -1959,7 +2087,6 @@
             "Y": 84,
             "Width": 740,
             "Height": 340,
-            "Visible": false,
             "Components": [
               {
                 "Type": "BoxWithBorder",
@@ -2453,6 +2580,570 @@
                   "TextId": "__SingleUse_FIM7",
                   "UseBuffer": true,
                   "BufferSize": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "thermal_box_10",
+                "X": 382,
+                "Y": 42,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_label_10",
+                "X": 394,
+                "Y": 47,
+                "Width": 92,
+                "Height": 24,
+                "TextId": "Field_TMotor2",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "thermal_value_10",
+                "X": 604,
+                "Y": 47,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 12
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "page_inverter",
+            "X": 30,
+            "Y": 84,
+            "Width": 740,
+            "Height": 340,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "inverter_box_1",
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_label_1",
+                "X": 12,
+                "Y": 5,
+                "Width": 126,
+                "Height": 24,
+                "TextId": "Field_InvCurrentDQ",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_value_1",
+                "X": 180,
+                "Y": 5,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 24
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "inverter_box_2",
+                "Y": 42,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_label_2",
+                "X": 12,
+                "Y": 47,
+                "Width": 155,
+                "Height": 24,
+                "TextId": "Field_InvVoltPower",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_value_2",
+                "X": 180,
+                "Y": 47,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 24
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "inverter_box_3",
+                "Y": 84,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_label_3",
+                "X": 12,
+                "Y": 89,
+                "Width": 159,
+                "Height": 24,
+                "TextId": "Field_InvTorque",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_value_3",
+                "X": 180,
+                "Y": 89,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 24
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "inverter_box_4",
+                "Y": 126,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_label_4",
+                "X": 12,
+                "Y": 131,
+                "Width": 134,
+                "Height": 24,
+                "TextId": "Field_InvSetpointDQ",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_value_4",
+                "X": 180,
+                "Y": 131,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 24
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "inverter_box_5",
+                "Y": 168,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_label_5",
+                "X": 12,
+                "Y": 173,
+                "Width": 173,
+                "Height": 24,
+                "TextId": "Field_InvStates",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_value_5",
+                "X": 180,
+                "Y": 173,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 24
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "inverter_box_6",
+                "X": 382,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_label_6",
+                "X": 394,
+                "Y": 5,
+                "Width": 134,
+                "Height": 24,
+                "TextId": "Field_InvRuntime",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_value_6",
+                "X": 562,
+                "Y": 5,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 24
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "inverter_box_7",
+                "X": 382,
+                "Y": 42,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_label_7",
+                "X": 394,
+                "Y": 47,
+                "Width": 115,
+                "Height": 24,
+                "TextId": "Field_InvCoreLoad",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_value_7",
+                "X": 562,
+                "Y": 47,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 24
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "inverter_box_8",
+                "X": 382,
+                "Y": 84,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_label_8",
+                "X": 394,
+                "Y": 89,
+                "Width": 139,
+                "Height": 24,
+                "TextId": "Field_InvCmdType",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_value_8",
+                "X": 562,
+                "Y": 89,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 24
+                }
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "inverter_box_9",
+                "X": 382,
+                "Y": 126,
+                "Width": 340,
+                "Height": 32,
+                "Color": {
+                  "Red": 12,
+                  "Green": 12,
+                  "Blue": 12
+                },
+                "BorderColor": {
+                  "Red": 240,
+                  "Green": 22,
+                  "Blue": 207
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_label_9",
+                "X": 394,
+                "Y": 131,
+                "Width": 141,
+                "Height": 24,
+                "TextId": "Field_InvModePos",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 170,
+                  "Green": 170,
+                  "Blue": 170
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "inverter_value_9",
+                "X": 562,
+                "Y": 131,
+                "Width": 11,
+                "Height": 24,
+                "TextId": "__SingleUse_WGT7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FIM7",
+                  "UseBuffer": true,
+                  "BufferSize": 24
                 }
               }
             ]

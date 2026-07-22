@@ -5,6 +5,13 @@
 #include "memorymap.h"
 #include "ui_buttons.h"
 
+static uint16_t appsPercent(uint16_t raw, uint16_t min, uint16_t max)
+{
+    if (max <= min || raw <= min) return 0U;
+    if (raw >= max) return 100U;
+    return static_cast<uint16_t>((static_cast<uint32_t>(raw - min) * 100U) / (max - min));
+}
+
 Model::Model() : modelListener(0),
                  lastTelemetrySequence(0U),
                  hasTelemetry(0U),
@@ -138,10 +145,10 @@ UiTelemetry Model::buildUiTelemetry(const DisplayTelemetry& snapshot)
 
     uiTelemetry.ecuFsmState = snapshot.ecu_fsm_state;
     uiTelemetry.ecuBotonArranque = snapshot.ecu_boton_arranque;
+    uiTelemetry.ecuS1Aceleracion = appsPercent(snapshot.ecu_s1_aceleracion, 2490U, 3350U);
+    uiTelemetry.ecuS2Aceleracion = appsPercent(snapshot.ecu_s2_aceleracion, 2345U, 3025U);
     uiTelemetry.ecuAceleracion = static_cast<uint16_t>(
-        (static_cast<uint32_t>(snapshot.ecu_s1_aceleracion) + static_cast<uint32_t>(snapshot.ecu_s2_aceleracion)) / 2U);
-    uiTelemetry.ecuS1Aceleracion = snapshot.ecu_s1_aceleracion;
-    uiTelemetry.ecuS2Aceleracion = snapshot.ecu_s2_aceleracion;
+        (static_cast<uint32_t>(uiTelemetry.ecuS1Aceleracion) + uiTelemetry.ecuS2Aceleracion) / 2U);
     uiTelemetry.ecuSFreno = snapshot.ecu_s_freno;
     uiTelemetry.ecuTorqueTotal = snapshot.ecu_torque_total;
     uiTelemetry.ecuFlagEv23 = snapshot.ecu_flag_ev_2_3;
@@ -165,12 +172,33 @@ UiTelemetry Model::buildUiTelemetry(const DisplayTelemetry& snapshot)
     uiTelemetry.inverterInvVdcReady = snapshot.inverter_inv_vdc_ready;
     uiTelemetry.inverterInvError = snapshot.inverter_inv_error;
     uiTelemetry.inverterInvDcBusVoltage = snapshot.inverter_inv_dc_bus_voltage;
-    uiTelemetry.inverterInvMotorTemp = snapshot.inverter_inv_motor_temp;
-    uiTelemetry.inverterInvIgbtTemp = snapshot.inverter_inv_igbt_temp;
-    uiTelemetry.inverterInvAirTemp = snapshot.inverter_inv_air_temp;
+    uiTelemetry.inverterInvMotorTemp = snapshot.inverter_inv_motor_temp - 50;
+    uiTelemetry.inverterInvIgbtTemp = snapshot.inverter_inv_igbt_temp - 50;
+    uiTelemetry.inverterInvAirTemp = snapshot.inverter_inv_air_temp - 50;
     uiTelemetry.inverterInvRpm = snapshot.inverter_inv_rpm;
     uiTelemetry.inverterInvSpeedActual = snapshot.inverter_inv_speed_actual;
     uiTelemetry.inverterInvCurrentActual = snapshot.inverter_inv_current_actual;
+    uiTelemetry.inverterInvCurrentDRaw = snapshot.inverter_inv_current_d_raw;
+    uiTelemetry.inverterInvCurrentQRaw = snapshot.inverter_inv_current_q_raw;
+    uiTelemetry.inverterInvVoltModulusPermil = snapshot.inverter_inv_volt_modulus_permil;
+    uiTelemetry.inverterInvMotor2Temp = snapshot.inverter_inv_motor2_temp_raw - 50;
+    uiTelemetry.inverterInvDemCode = snapshot.inverter_inv_dem_code;
+    uiTelemetry.inverterInvDemPresent = snapshot.inverter_inv_dem_present;
+    uiTelemetry.inverterInvPwrstgBitState = snapshot.inverter_inv_pwrstg_bit_state;
+    uiTelemetry.inverterInvFocBitState = snapshot.inverter_inv_foc_bit_state;
+    uiTelemetry.inverterInvUptimeMs = snapshot.inverter_inv_uptime_ms;
+    uiTelemetry.inverterInvCore0LoadPct = snapshot.inverter_inv_core0_load_pct;
+    uiTelemetry.inverterInvCore1LoadPct = snapshot.inverter_inv_core1_load_pct;
+    uiTelemetry.inverterInvKl30Mv = snapshot.inverter_inv_kl30_mV;
+    uiTelemetry.inverterInvCmdSrc = snapshot.inverter_inv_cmd_src;
+    uiTelemetry.inverterInvCtrlType = snapshot.inverter_inv_ctrl_type;
+    uiTelemetry.inverterInvCtrlMode = snapshot.inverter_inv_ctrl_mode;
+    uiTelemetry.inverterInvPosFbSrc = snapshot.inverter_inv_pos_fb_src;
+    uiTelemetry.inverterInvAcBusPowerW = snapshot.inverter_inv_ac_bus_power_W;
+    uiTelemetry.inverterInvTorqueMaxFeasNdm = snapshot.inverter_inv_torque_max_feas_Ndm;
+    uiTelemetry.inverterInvTorqueEstNm = snapshot.inverter_inv_torque_est_Nm;
+    uiTelemetry.inverterInvSetpointDRaw = snapshot.inverter_inv_setpoint_d_raw;
+    uiTelemetry.inverterInvSetpointQRaw = snapshot.inverter_inv_setpoint_q_raw;
 
     uiTelemetry.gpsSpeed = snapshot.gps_speed;
     uiTelemetry.gpsCourseDeg = snapshot.gps_course_deg;

@@ -42,6 +42,27 @@ struct UiTelemetry
     int32_t inverterInvRpm;
     int32_t inverterInvSpeedActual;
     int32_t inverterInvCurrentActual;
+    int16_t inverterInvCurrentDRaw;
+    int16_t inverterInvCurrentQRaw;
+    uint16_t inverterInvVoltModulusPermil;
+    int16_t inverterInvMotor2Temp;
+    uint16_t inverterInvDemCode;
+    uint8_t inverterInvDemPresent;
+    uint16_t inverterInvPwrstgBitState;
+    uint8_t inverterInvFocBitState;
+    uint32_t inverterInvUptimeMs;
+    uint8_t inverterInvCore0LoadPct;
+    uint8_t inverterInvCore1LoadPct;
+    uint16_t inverterInvKl30Mv;
+    uint8_t inverterInvCmdSrc;
+    uint8_t inverterInvCtrlType;
+    uint8_t inverterInvCtrlMode;
+    uint8_t inverterInvPosFbSrc;
+    int32_t inverterInvAcBusPowerW;
+    int16_t inverterInvTorqueMaxFeasNdm;
+    int16_t inverterInvTorqueEstNm;
+    int16_t inverterInvSetpointDRaw;
+    int16_t inverterInvSetpointQRaw;
 
     uint16_t gpsSpeed;
     uint16_t gpsCourseDeg;
